@@ -1,0 +1,29 @@
+\documentclass{book}
+
+
+\usepackage{APEX_format_old}
+
+\begin{document}
+
+%\exampleinmargin
+\drawexamplemarks
+
+Text. Test.\\
+
+
+\begin{example}{ex1} More text\\
+
+\noindent Inside the environment. Lots of random text. The first example is \ref{ex1} and the second is \ref{ex2}
+\end{example}
+
+More text
+\nodrawexamplemarks
+
+\begin{example}{ex2} More text\\
+
+\noindent Inside the environment. Lots of random text.\clearpage Nire Inside the environment. Lots of random text. The first example is \ref{ex1} and the second is \ref{ex2}
+\end{example}
+
+More text
+
+\end{document}

@@ -1,0 +1,28 @@
+# Git Ignore File for APEXCalculus
+#
+#
+## Standard LaTeX files types
+*.aux
+*.idx
+*.ilg
+*.ind
+*.log
+*.out
+*.synctex
+*.tps
+*.tcp
+#
+## Figure files
+*.dep
+*.dpth
+*.md5
+#*.out
+#*.log
+*.tmp
+*.tps
+#
+## Don't skip these files
+!CalculusI.aux
+!CalculusII.aux
+!CalculusIII.aux
+!Calculus.aux

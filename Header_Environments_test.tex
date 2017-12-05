@@ -1,0 +1,251 @@
+\newlength{\topmarginlength}
+\newlength{\bottommarginlength}
+\newlength{\oddpagemarginlength}
+\newlength{\evenpagemarginlength}
+\newlength{\marginlinelength}
+
+\newcounter{examplestartpageref}
+\newcounter{pagedifference}
+
+\setlength{\marginlinelength}{5pt}
+\setlength{\topmarginlength}{-1in-\voffset}
+\setlength{\bottommarginlength}{-1in-\textheight-2\baselineskip}
+\setlength{\oddpagemarginlength}{1in+\hoffset+\oddsidemargin-2\marginlinelength}
+\setlength{\evenpagemarginlength}{1in+\hoffset+\evensidemargin-2\marginlinelength}
+
+\newcommand{\colorlinecolor}{blue!95!black!30}
+\newcommand{\bwlinecolor}{black!30}
+\ifthenelse{\boolean{in_color}}{\newcommand{\thelinecolor}{\colorlinecolor}}{\newcommand{\thelinecolor}{\bwlinecolor}}
+\newcommand{\linestyle}{thick}
+
+\newcounter{examplecounter}
+\setcounter{examplecounter}{0}
+
+\newcommand{\example}[3]{%
+\noindent%
+\hskip -2\marginlinelength%
+\parbox{\marginlinelength}{%
+\begin{tikzpicture}[remember picture,overlay]%
+\draw (0,0) circle (1pt) node (#1) {};%
+\end{tikzpicture}%
+}% ends parbox where line begins
+\hskip \marginlinelength% puts us back in line
+\parbox{80pt}{{\bf Example \refstepcounter{examplecounter}\theexamplecounter}}% ends parbox
+\label{#1}%
+\ifthenelse{\pageref{#1}=\pageref{e#1}}% if the beginning and end are on the same page
+{%
+#2 \par #3 {\it Selah}\label{e#1}% writes the full example then draws the lines
+\begin{tikzpicture}[remember picture,overlay] \draw (0,0) circle (1pt) node (e#1) {};
+\draw [\linestyle,\thelinecolor] (#1) -- (#1.south |- e#1.south) -- ++(10pt,0);
+\end{tikzpicture}
+}% ends if beginning and end are on same page.
+% next is if they are on different pages
+{% first draw line from start to bottom of page
+\begin{tikzpicture}[remember picture,overlay]% 
+\ifthenelse{\isodd{\pageref{#1}}}% draws lines based on whether on an even or odd page %
+{\node [xshift=\oddpagemarginlength,yshift=\bottommarginlength](bottomleft) at (current page.north west)  {};}
+{\node [xshift=\evenpagemarginlength,yshift=\bottommarginlength](bottomleft) at (current page.north west)  {};}
+\draw [green] (#1) -- (bottomleft);
+\end{tikzpicture}
+% end drawing of line
+#2 \par #3 {\it Selah}\label{e#1}% now write out full example
+% now draw line from end to top of page
+\begin{tikzpicture}[remember picture,overlay] \draw (0,0) circle (1pt) node (e#1) {};
+\ifthenelse{\isodd{\pageref{e#1}}}% draws lines based on whether on an even or odd page %
+{\node [xshift=\oddpagemarginlength,yshift=\topmarginlength](topleft) at (current page.north west)  {};}
+{\node [xshift=\evenpagemarginlength,yshift=\topmarginlength](topleft) at (current page.north west)  {};}
+\draw [blue,very thick] (e#1.south -| topleft) -- (topleft);
+\end{tikzpicture}%
+}% ends the check for same page or not
+%
+}%ends the definition of exam
+
+
+% Draws a line on a page that doesn't contain either
+% the beginning or end of an example.
+% It has one arguments, the  label
+% of the current example. 
+\newcommand{\drawexampleline}[1]{
+\ifthenelse{\boolean{showexamplelines}}
+{ % show lines
+\setcounterpageref{examplestartpageref}{#1}%
+\setcounterpageref{pagedifference}{\thepage-\theexamplestartpageref}
+\ifthenelse{\isodd{\theexamplestartpageref}}% example is on an odd page
+       {\ifthenelse{\isodd{\thepagedifference}}% is the difference between this page
+       % and the start even or odd?
+       % odd: then plots on different side of page
+       {\begin{tikzpicture}[remember picture,overlay]
+        \draw [xshift=\evenpagemarginlength,yshift=\topmarginlength,\thelinecolor] (current page.north west) -- +(0,-\textheight);
+        \end{tikzpicture}
+        }% ends if difference is odd
+        {% difference is even
+        \begin{tikzpicture}[remember picture,overlay]
+        \draw [xshift=\oddpagemarginlength,yshift=\topmarginlength,\thelinecolor] (current page.north west) -- +(0,-\textheight);
+        \end{tikzpicture}
+        }% ends difference is even and start page is odd
+}% ends start page is odd
+       {\ifthenelse{\isodd{\thepagedifference}}% is the difference between this page
+       % and the start even or odd?
+       % odd: then plots on different side of page
+       {\begin{tikzpicture}[remember picture,overlay]
+        \draw [xshift=\oddpagemarginlength,yshift=\topmarginlength,\thelinecolor] (current page.north west) -- +(0,-\textheight);
+        \end{tikzpicture}
+        }% ends if difference is odd
+        {% difference is even
+        \begin{tikzpicture}[remember picture,overlay]
+        \draw [xshift=\evenpagemarginlength,yshift=\topmarginlength,\thelinecolor] (current page.north west) -- +(0,-\textheight);
+        \end{tikzpicture}
+        }% ends difference is even and start page is even
+}% ends start page is even
+} % End show lines
+{} % No else - don't do anything
+}
+
+
+
+%
+%Define style for Definitions, Theorems and Key Ideas  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+
+\theoremstyle{mystyle}
+
+\newtheorem{deff}{Definition}
+
+%\newcommand{\definition}[2]{\begin{deff}\label{#1} \fcolorbox{blue}{myblue}{ \begin{minipage}[t]{265pt}#2\end{minipage}}\end{deff}}
+
+\ifthenelse{\boolean{booksize}\or\boolean{amazonsize}}{% Begin if booksize
+\newcommand{\definition}[2]{\begin{deff}\label{#1}
+\raisebox{24pt}{\begin{tikzpicture}[baseline=(current bounding box.north)-1cm]
+%\pgfsetbaselinepointlater{\pgfpointanchor{X}{base}}
+\ifthenelse{\boolean{in_color}}{\node (X) [rectangle,
+text width = 240pt,
+baseline=-1cm,
+very thick,
+inner sep=15pt,
+draw = yellow!95!black!60,
+top color = white!95!yellow,
+bottom color = yellow!90!black!30,
+text justified]} 
+{\node (X) [rectangle,draw,
+text width = 240pt,
+baseline=-1cm,
+inner sep=15pt,
+very thick,
+text justified]} 
+{#2};
+\end{tikzpicture}}
+\end{deff}}%
+}%  End If
+{% begin else not booksize
+\newcommand{\definition}[2]{\begin{deff}\label{#1}
+\raisebox{24pt}{\begin{tikzpicture}[baseline=(current bounding box.north)-1cm]
+%\pgfsetbaselinepointlater{\pgfpointanchor{X}{base}}
+\node (X) [rectangle,draw,
+text width = 170pt,
+baseline=-1cm,
+inner sep=15pt,
+very thick,
+text justified] 
+{#2};
+\end{tikzpicture}}
+\end{deff}}%
+}%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newtheorem{thm}{Theorem}
+
+\ifthenelse{\boolean{booksize}\or\boolean{amazonsize}}{%
+\newcommand{\colortheorem}[2]{\begin{thm}\label{#1}
+\raisebox{24pt}{\begin{tikzpicture}[baseline=(current bounding box.north)-1cm]
+%\pgfsetbaselinepointlater{\pgfpointanchor{X}{base}}
+\ifthenelse{\boolean{in_color}}
+{\node (X) [rectangle,
+text width = 240pt,
+baseline=-1cm,
+inner sep=15pt,
+very thick,
+draw = green!30!black!50,
+top color = white!95!green,
+bottom color = green!60!black!20,
+text justified] }
+{\node (X) [rectangle,draw,
+text width = 240pt,
+baseline=-1cm,
+inner sep=15pt,
+very thick,
+text justified] }
+{#2};
+\end{tikzpicture}}\end{thm}}%
+}%
+{%
+\newcommand{\colortheorem}[2]{\begin{thm}\label{#1}
+\raisebox{24pt}{\begin{tikzpicture}[baseline=(current bounding box.north)-1cm]
+%\pgfsetbaselinepointlater{\pgfpointanchor{X}{base}}
+\node (X) [rectangle,draw,
+text width = 170pt,
+baseline=-1cm,
+inner sep=15pt,
+very thick,
+text justified] 
+{#2};
+\end{tikzpicture}}\end{thm}}%
+}%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newtheorem{keyidea}{Key Idea}
+
+\ifthenelse{\boolean{booksize}\or\boolean{amazonsize}}{%
+\newcommand{\idea}[2]{\begin{keyidea}\label{#1}
+\raisebox{24pt}{\begin{tikzpicture}[baseline=(current bounding box.north)-1cm]
+%\pgfsetbaselinepointlater{\pgfpointanchor{X}{base}}
+\ifthenelse{\boolean{in_color}}
+{\node (X) [rectangle,
+text width = 240pt,
+baseline=-1cm,
+inner sep=15pt,
+very thick,
+draw = red!30!black!50,
+top color = white!95!red,
+bottom color = red!60!black!20,
+text justified] }
+{\node (X) [rectangle,draw,
+text width = 240pt,
+baseline=-1cm,
+inner sep=15pt,
+very thick,
+text justified] }
+{#2};
+\end{tikzpicture}}
+\end{keyidea}}%
+}%
+{%
+\newcommand{\idea}[2]{\begin{keyidea}\label{#1}
+\raisebox{24pt}{\begin{tikzpicture}[baseline=(current bounding box.north)-1cm]
+%\pgfsetbaselinepointlater{\pgfpointanchor{X}{base}}
+\node (X) [rectangle,draw,
+text width = 170pt,
+baseline=-1cm,
+inner sep=15pt,
+very thick,
+text justified] 
+{#2};
+\end{tikzpicture}}
+\end{keyidea}}%
+}%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\asyouread}[1]{\begin{tikzpicture}
+\ifthenelse{\boolean{in_color}}{\node [preaction={fill=black,opacity=.5,transform canvas={xshift=1mm,yshift=-1mm}}, right color=blue!80!black!30, left color=blue!80] at (0,0) {\textcolor{white}{\textsf{\textit{AS YOU READ $\ldots$}}}};}
+{\node [preaction={fill=black,opacity=.5,transform canvas={xshift=1mm,yshift=-1mm}}, right color=black!30, left color=black!10] at (0,0) {\textcolor{white}{\textsf{\textit{AS YOU READ $\ldots$}}}};}
+\end{tikzpicture}
+\begin{enumerate}
+#1
+\end{enumerate}
+\vskip 20pt}

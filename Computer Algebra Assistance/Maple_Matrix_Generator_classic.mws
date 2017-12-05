@@ -1,0 +1,305 @@
+{VERSION 7 0 "Windows XP" "7.0" }
+{USTYLETAB {PSTYLE "Ordered List 5" -1 200 1 {CSTYLE "" -1 -1 "Times" 
+1 12 0 0 0 1 2 2 2 2 2 2 1 0 0 1 }1 1 0 0 3 3 2 144 2 0 2 2 -1 1 }
+{PSTYLE "Heading 4" -1 20 1 {CSTYLE "" -1 -1 "MS Serif" 1 12 0 0 0 1 1
+ 2 2 2 2 2 1 0 0 1 }1 1 0 0 0 0 2 0 2 0 2 2 -1 1 }{PSTYLE "Text Output
+" -1 2 1 {CSTYLE "" -1 -1 "Courier" 1 12 0 0 255 1 2 2 2 2 2 1 3 0 0 1
+ }1 1 0 0 0 0 2 0 2 0 2 2 -1 1 }{PSTYLE "Ordered List 1" -1 201 1 
+{CSTYLE "" -1 -1 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 1 0 0 1 }1 1 0 0 3 3
+ 2 0 2 0 2 2 -1 1 }{PSTYLE "Bullet Item" -1 15 1 {CSTYLE "" -1 -1 "Tim
+es" 1 12 0 0 0 1 2 2 2 2 2 2 1 0 0 1 }1 1 0 0 3 3 2 0 2 0 2 2 -1 1 }
+{PSTYLE "Author" -1 19 1 {CSTYLE "" -1 -1 "Times" 1 12 0 0 0 1 2 2 2 2
+ 2 2 1 0 0 1 }3 1 0 0 8 8 2 0 2 0 2 2 -1 1 }{PSTYLE "Dash Item" -1 16 
+1 {CSTYLE "" -1 -1 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 1 0 0 1 }1 1 0 0 3
+ 3 2 0 2 0 2 2 -1 1 }{PSTYLE "Heading 3" -1 5 1 {CSTYLE "" -1 -1 "MS S
+erif" 1 14 0 0 0 1 1 1 2 2 2 2 1 0 0 1 }1 1 0 0 0 0 2 0 2 0 2 2 -1 1 }
+{PSTYLE "Diagnostic" -1 9 1 {CSTYLE "" -1 -1 "Courier" 1 12 40 120 40 
+1 2 2 2 2 2 1 2 0 0 1 }1 1 0 0 0 0 2 0 2 0 2 2 -1 1 }{PSTYLE "Ordered \+
+List 4" -1 202 1 {CSTYLE "" -1 -1 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 1 0
+ 0 1 }1 1 0 0 3 3 2 108 2 0 2 2 -1 1 }{PSTYLE "Maple Output" -1 11 1 
+{CSTYLE "" -1 -1 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 1 0 0 1 }3 1 0 0 0 0
+ 2 0 2 0 2 2 -1 1 }{PSTYLE "List Item" -1 14 1 {CSTYLE "" -1 -1 "Times
+" 1 12 0 0 0 1 2 2 2 2 2 2 1 0 0 1 }1 1 0 0 3 3 2 0 2 0 2 2 -1 1 }
+{PSTYLE "Line Printed Output" -1 6 1 {CSTYLE "" -1 -1 "Courier" 1 12 0
+ 0 255 1 2 2 2 2 2 1 2 0 0 1 }1 1 0 0 0 0 2 0 2 0 2 2 -1 1 }{PSTYLE "H
+eading 2" -1 4 1 {CSTYLE "" -1 -1 "MS Serif" 1 16 0 0 0 1 2 1 2 2 2 2 
+1 0 0 1 }1 1 0 0 8 2 2 0 2 0 2 2 -1 1 }{PSTYLE "Ordered List 3" -1 203
+ 1 {CSTYLE "" -1 -1 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 1 0 0 1 }1 1 0 0 
+3 3 2 72 2 0 2 2 -1 1 }{PSTYLE "Error" -1 8 1 {CSTYLE "" -1 -1 "Courie
+r" 1 12 255 0 255 1 2 2 2 2 2 1 1 0 0 1 }1 1 0 0 0 0 2 0 2 0 2 2 -1 1 
+}{PSTYLE "Maple Plot" -1 13 1 {CSTYLE "" -1 -1 "Times" 1 12 0 0 0 1 2 
+2 2 2 2 2 1 0 0 1 }3 1 0 0 0 0 2 0 2 0 2 2 -1 1 }{PSTYLE "Warning" -1 
+7 1 {CSTYLE "" -1 -1 "Courier" 1 12 0 0 255 1 2 2 2 2 2 1 1 0 0 1 }1 1
+ 0 0 0 0 2 0 2 0 2 2 -1 1 }{PSTYLE "Heading 1" -1 3 1 {CSTYLE "" -1 -1
+ "MS Serif" 1 18 0 0 0 1 2 1 2 2 2 2 1 0 0 1 }1 1 0 0 8 4 2 0 2 0 2 2 
+-1 1 }{PSTYLE "Title" -1 18 1 {CSTYLE "" -1 -1 "Times" 1 18 0 0 0 1 2 
+1 2 2 2 2 1 0 0 1 }3 1 0 0 12 12 2 0 2 0 2 2 -1 1 }{PSTYLE "Ordered Li
+st 2" -1 204 1 {CSTYLE "" -1 -1 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 1 0 0
+ 1 }1 1 0 0 3 3 2 36 2 0 2 2 -1 1 }{PSTYLE "Normal" -1 0 1 {CSTYLE "" 
+-1 -1 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 1 0 0 1 }1 1 0 0 0 0 2 0 2 0 2 
+2 -1 1 }{CSTYLE "Text" -1 200 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 0 0 0 1
+ }{CSTYLE "Page Number" -1 33 "Times" 1 10 0 0 0 1 2 2 2 2 2 2 0 0 0 1
+ }{CSTYLE "Maple Input" -1 0 "Courier" 1 12 255 0 0 1 2 1 2 2 1 2 0 0 
+0 1 }{CSTYLE "2D Output" -1 20 "Times" 1 12 0 0 255 1 2 2 2 2 2 1 0 0 
+0 1 }{CSTYLE "Dictionary Hyperlink" -1 45 "MS Serif" 1 12 147 0 15 1 2
+ 2 1 2 2 2 0 0 0 1 }{CSTYLE "2D Input" -1 19 "Times" 1 12 0 0 0 1 2 2 
+2 2 1 2 0 0 0 1 }{CSTYLE "Maple Input Placeholder" -1 201 "Courier" 1 
+12 200 0 200 1 2 1 2 2 1 2 0 0 0 1 }{CSTYLE "2D Math" -1 2 "Times" 1 
+12 0 0 0 1 2 2 2 2 2 2 0 0 0 1 }{CSTYLE "Hyperlink" -1 17 "MS Serif" 1
+ 12 0 128 128 1 2 2 1 2 2 2 0 0 0 1 }}
+{SECT 0 {EXCHG {PARA 0 "> " 0 "" {XPPEDIT 19 1 "" "%#%?G" }}}{EXCHG 
+{PARA 0 "> " 0 "" {XPPEDIT 19 1 "with(LinearAlgebra); -1;" "C$-I%withG
+6$%*protectedGI(_syslibG6\"6#I.LinearAlgebraGF%!\"\"" }}}{EXCHG {PARA 
+0 "> " 0 "" {XPPEDIT 19 1 "a := `<|>`(`<,>`(1, 2), `<,>`(3, 4), `<,>`(
+1, 1)); 1; b := `<|>`(`<,>`(1, 9), `<,>`(3, 3)); 1; b := Vector([3, 3,
+ 1]); 1; c := Multiply(a, b); 1;" "C*>I\"aG6\"-I$<|gr>GI(_syslibGF%6%-
+I$<,>GF(6$\"\"\"\"\"#-F+6$\"\"$\"\"%-F+6$F-F-F->I\"bGF%-F'6$-F+6$F-\"
+\"*-F+6$F1F1F->F6-I'VectorG6$%*protectedGF(6#7%F1F1F-F->I\"cGF%-I)Mult
+iplyGFA6$F$F6F-" }}{PARA 11 "" 1 "" {XPPMATH 20 ">I\"aG6\"-I'RTABLEGF$
+6%\"*?L(*[\"-I'MATRIXGF$6#7$7%\"\"\"\"\"$F.7%\"\"#\"\"%F.I'MatrixG6$%*
+protectedGI(_syslibGF$" }}{PARA 11 "" 1 "" {XPPMATH 20 ">I\"bG6\"-I'RT
+ABLEGF$6%\"*cl!3:-I'MATRIXGF$6#7$7$\"\"\"\"\"$7$\"\"*F/I'MatrixG6$%*pr
+otectedGI(_syslibGF$" }}{PARA 11 "" 1 "" {XPPMATH 20 ">I\"bG6\"-I'RTAB
+LEGF$6%\"*kw-\\\"-I'MATRIXGF$6#7%7#\"\"$F-7#\"\"\"&I'VectorG6$%*protec
+tedGI(_syslibGF$6#I'columnGF$" }}{PARA 11 "" 1 "" {XPPMATH 20 ">I\"cG6
+\"-I'RTABLEGF$6%\"*!QR-:-I'MATRIXGF$6#7$7#\"#87#\"#>&I'VectorG6$%*prot
+ectedGI(_syslibGF$6#I'columnGF$" }}}{EXCHG {PARA 0 "> " 0 "" {XPPEDIT 
+19 1 "expand(LinearSolve(a, c, free = 'x')); 1;" "C$-I'expandG%*protec
+tedG6#-I,LinearSolveG6\"6%I\"aGF)I\"cGF)/I%freeGF).I\"xGF)\"\"\"" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "-I'RTABLEG6\"6%\"*KO7\\\"-I'MATRIXGF$6#7
+%7#,&\"\"'\"\"\"&I\"xGF$6#\"\"#!\"\"7#F/7#,&\"\"(F.*&F2F.F/F.F3&I'Vect
+orG6$%*protectedGI(_syslibGF$6#I'columnGF$" }}}{EXCHG {PARA 0 "> " 0 "
+" {XPPEDIT 19 1 "`<|>`(a, c); 1;" "C$-I$<|gr>GI(_syslibG6\"6$I\"aGF&I
+\"cGF&\"\"\"" }}{PARA 11 "" 1 "" {XPPMATH 20 "-I'RTABLEG6\"6%\"*[!y'[
+\"-I'MATRIXGF$6#7$7&\"\"\"\"\"$F,\"#87&\"\"#\"\"%F,\"#>I'MatrixG6$%*pr
+otectedGI(_syslibGF$" }}}{EXCHG {PARA 0 "> " 0 "" {XPPEDIT 19 1 "Reduc
+edRowEchelonForm(`<|>`(a, c)); 1;" "C$-I6ReducedRowEchelonFormG6\"6#-I
+$<|gr>GI(_syslibGF%6$I\"aGF%I\"cGF%\"\"\"" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "-I'RTABLEG6\"6%\"*'H\\&\\\"-I'MATRIXGF$6#7$7&\"\"\"\"\"!#
+!\"\"\"\"##\"\"&F07&F-F,#F,F0#\"\"(F0I'MatrixG6$%*protectedGI(_syslibG
+F$" }}}{EXCHG {PARA 0 "> " 0 "" {XPPEDIT 19 1 "a := Matrix([[1, 1, 2, \+
+3, 4], [3, 3, 1, 1, 1]]); 1;" "C$>I\"aG6\"-I'MatrixG6$%*protectedGI(_s
+yslibGF%6#7$7'\"\"\"F.\"\"#\"\"$\"\"%7'F0F0F.F.F.F." }}{PARA 11 "" 1 "
+" {XPPMATH 20 ">I\"aG6\"-I'RTABLEGF$6%\"*OvG^\"-I'MATRIXGF$6#7$7'\"\"
+\"F.\"\"#\"\"$\"\"%7'F0F0F.F.F.I'MatrixG6$%*protectedGI(_syslibGF$" }}
+}{EXCHG {PARA 0 "> " 0 "" {XPPEDIT 19 1 "convert(ColumnSpace(a)[1], Ma
+trix); 1;" "C$-I(convertG%*protectedG6$&-I,ColumnSpaceG6\"6#I\"aGF*6#
+\"\"\"I'MatrixG6$F%I(_syslibGF*F." }}{PARA 11 "" 1 "" {XPPMATH 20 "-I'
+RTABLEG6\"6%\"*K%f%\\\"-I'MATRIXGF$6#7$7#\"\"\"7#\"\"!I'MatrixG6$%*pro
+tectedGI(_syslibGF$" }}}{EXCHG {PARA 0 "> " 0 "" {XPPEDIT 19 1 "SubMat
+rix(a, [1 .. 2], [2])-convert(ColumnSpace(a)[1], Matrix); 1;" "C$,&-I*
+SubMatrixG6\"6%I\"aGF&7#;\"\"\"\"\"#7#F,F+-I(convertG%*protectedG6$&-I
+,ColumnSpaceGF&6#F(6#F+I'MatrixG6$F0I(_syslibGF&!\"\"F+" }}{PARA 11 ""
+ 1 "" {XPPMATH 20 "-I'RTABLEG6\"6%\"*3?()[\"-I'MATRIXGF$6#7$7#\"\"!7#
+\"\"$I'MatrixG6$%*protectedGI(_syslibGF$" }}}{EXCHG {PARA 0 "> " 0 "" 
+{XPPEDIT 19 1 "x[1]*(SubMatrix(a, [1 .. 2], [2])-convert(ColumnSpace(a
+)[1], Matrix)); 1;" "C$*&&I\"xG6\"6#\"\"\"F(,&-I*SubMatrixGF&6%I\"aGF&
+7#;F(\"\"#7#F0F(-I(convertG%*protectedG6$&-I,ColumnSpaceGF&6#F-F'I'Mat
+rixG6$F4I(_syslibGF&!\"\"F(F(" }}{PARA 11 "" 1 "" {XPPMATH 20 "-I'RTAB
+LEG6\"6%\"*S6v\\\"-I'MATRIXGF$6#7$7#\"\"!7#,$*&\"\"$\"\"\"&I\"xGF$6#F1
+F1F1I'MatrixG6$%*protectedGI(_syslibGF$" }}}{EXCHG {PARA 0 "> " 0 "" 
+{XPPEDIT 19 1 "greg := proc (x) local t1, t2, t3; print(x); print(Redu
+cedRowEchelonForm(x)); print(latex(SubMatrix(x, [1 .. RowDimension(x)]
+, [1 .. ColumnDimension(x)-1]))); print(latex(SubMatrix(x, [1 .. RowDi
+mension(x)], [ColumnDimension(x)]))); t2 := ReducedRowEchelonForm(x); \+
+for t1 to ColumnDimension(x)-1 do print(latex(-SubMatrix(t2, [1 .. Row
+Dimension(x)], [t1]))) end do; print(latex(SubMatrix(t2, [1 .. RowDime
+nsion(x)], [ColumnDimension(x)]))); t end proc; 1;" "C$>I%gregG6\"f*6#
+I\"xGF%6%I#t1GF%I#t2GF%I#t3GF%F%F%C*-I&printG%*protectedGF'-F/6#-I6Red
+ucedRowEchelonFormGF%F'-F/6#-I&latexG6$F0I(_syslibGF%6#-I*SubMatrixGF%
+6%F(7#;\"\"\"-I-RowDimensionGF%F'7#;FA,&-I0ColumnDimensionGF%F'FAFA!\"
+\"-F/6#-F86#-F=6%F(F?7#FG>F+F3?(F*FAFAFFI%trueGF0-F/6#-F86#,$-F=6%F+F?
+7#F*FI-F/6#-F86#-F=6%F+F?FPI\"tGF%F%F%F%FA" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 ">I%gregG6\"f*6#I\"xGF$6%I#t1GF$I#t2GF$I#t3GF$F$F$C*-I&pri
+ntG%*protectedGF&-F.6#-_I.LinearAlgebraG6$F/I(_syslibGF$I6ReducedRowEc
+helonFormGF$F&-F.6#-I&latexGF56#-_F4I*SubMatrixGF$6%F'7#;\"\"\"-_F4I-R
+owDimensionGF$F&7#;FC,&-_F4I0ColumnDimensionGF$F&FCFC!\"\"-F.6#-F;6#-F
+>6%F'FA7#FJ>F*F2?(F)FCFCFII%trueGF/-F.6#-F;6#,$-F>6%F*FA7#F)FM-F.6#-F;
+6#-F>6%F*FAFTI\"tGF$F$F$F$" }}}{EXCHG {PARA 0 "> " 0 "" {XPPEDIT 19 1 
+"greg(a); 1;" "C$-I%gregG6\"6#I\"aGF%\"\"\"" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "-I'RTABLEG6\"6%\"*OvG^\"-I'MATRIXGF$6#7$7'\"\"\"F,\"\"#\"
+\"$\"\"%7'F.F.F,F,F,I'MatrixG6$%*protectedGI(_syslibGF$" }}{PARA 11 ""
+ 1 "" {XPPMATH 20 "-I'RTABLEG6\"6%\"*/tM\\\"-I'MATRIXGF$6#7$7'\"\"\"F,
+\"\"!#!\"\"\"\"&#!\"#F07'F-F-F,#\"\")F0#\"#6F0I'MatrixG6$%*protectedGI
+(_syslibGF$" }}{PARA 6 "" 1 "" {TEXT 202 75 " \\left[ \\begin \{array
+\}\{cccc\} 1&1&2&3\\\\\\noalign\{\\medskip\}3&3&1&1" }{TEXT 202 27 "\n
+\\end \{array\} \\right] " }}{PARA 11 "" 1 "" {XPPMATH 20 "%#%?G" }}
+{PARA 6 "" 1 "" {TEXT 202 85 " \\left[ \\begin \{array\}\{c\} 4\\\\\\n
+oalign\{\\medskip\}1\\end \{array\} \\right] " }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "%#%?G" }}{PARA 6 "" 1 "" {TEXT 202 85 " \\left[ \\begin \+
+\{array\}\{c\} 1\\\\\\noalign\{\\medskip\}0\\end \{array\} \\right] " 
+}}{PARA 11 "" 1 "" {XPPMATH 20 "%#%?G" }}{PARA 6 "" 1 "" {TEXT 202 85 
+" \\left[ \\begin \{array\}\{c\} 1\\\\\\noalign\{\\medskip\}0\\end \{a
+rray\} \\right] " }}{PARA 11 "" 1 "" {XPPMATH 20 "%#%?G" }}{PARA 6 "" 
+1 "" {TEXT 202 85 " \\left[ \\begin \{array\}\{c\} 0\\\\\\noalign\{\\m
+edskip\}1\\end \{array\} \\right] " }}{PARA 11 "" 1 "" {XPPMATH 20 "%#
+%?G" }}{PARA 6 "" 1 "" {TEXT 202 80 " \\left[ \\begin \{array\}\{c\} -
+1/5\\\\\\noalign\{\\medskip\}8/5\\end \{array\}" }{TEXT 202 12 "\n \\r
+ight] " }}{PARA 11 "" 1 "" {XPPMATH 20 "%#%?G" }}{PARA 6 "" 1 "" {TEXT
+ 202 84 " \\left[ \\begin \{array\}\{c\} -2/5\\\\\\noalign\{\\medskip
+\}\{\\frac \{11\}\{5\}\}" }{TEXT 202 27 "\n\\end \{array\} \\right] " 
+}}{PARA 11 "" 1 "" {XPPMATH 20 "%#%?G" }}{PARA 11 "" 1 "" {XPPMATH 20 
+"I\"tG6\"" }}}{EXCHG {PARA 0 "> " 0 "" {XPPEDIT 19 1 "ReducedRowEchelo
+nForm(a); 1;" "C$-I6ReducedRowEchelonFormG6\"6#I\"aGF%\"\"\"" }}{PARA 
+11 "" 1 "" {XPPMATH 20 "-I'RTABLEG6\"6%\"*'z$z\\\"-I'MATRIXGF$6#7$7'\"
+\"\"F,\"\"!#!\"\"\"\"&#!\"#F07'F-F-F,#\"\")F0#\"#6F0I'MatrixG6$%*prote
+ctedGI(_syslibGF$" }}}{EXCHG {PARA 0 "> " 0 "" {XPPEDIT 19 1 "greg(Ran
+domMatrix(2, 4, generator = -5 .. 5)); 1;" "C$-I%gregG6\"6#-I-RandomMa
+trixGF%6%\"\"#\"\"%/I*generatorGF%;!\"&\"\"&\"\"\"" }}{PARA 11 "" 1 ""
+ {XPPMATH 20 "-I'RTABLEG6\"6%\"*!)4:Z\"-I'MATRIXGF$6#7$7&\"\"#F,F,\"\"
+$7&\"\"&F/!\"$F0I'MatrixG6$%*protectedGI(_syslibGF$" }}{PARA 11 "" 1 "
+" {XPPMATH 20 "-I'RTABLEG6\"6%\"*ckEY\"-I'MATRIXGF$6#7$7&\"\"\"F,\"\"!
+#\"\"$\"#;7&F-F-F,#\"#@F0I'MatrixG6$%*protectedGI(_syslibGF$" }}{PARA 
+6 "" 1 "" {TEXT 202 71 " \\left[ \\begin \{array\}\{ccc\} 2&2&2\\\\\\n
+oalign\{\\medskip\}5&5&-3" }{TEXT 202 27 "\n\\end \{array\} \\right] "
+ }}{PARA 11 "" 1 "" {XPPMATH 20 "%#%?G" }}{PARA 6 "" 1 "" {TEXT 202 
+86 " \\left[ \\begin \{array\}\{c\} 3\\\\\\noalign\{\\medskip\}-3\\end
+ \{array\} \\right] " }}{PARA 11 "" 1 "" {XPPMATH 20 "%#%?G" }}{PARA 6
+ "" 1 "" {TEXT 202 86 " \\left[ \\begin \{array\}\{c\} -1\\\\\\noalign
+\{\\medskip\}0\\end \{array\} \\right] " }}{PARA 11 "" 1 "" {XPPMATH 
+20 "%#%?G" }}{PARA 6 "" 1 "" {TEXT 202 86 " \\left[ \\begin \{array\}
+\{c\} -1\\\\\\noalign\{\\medskip\}0\\end \{array\} \\right] " }}{PARA 
+11 "" 1 "" {XPPMATH 20 "%#%?G" }}{PARA 6 "" 1 "" {TEXT 202 86 " \\left
+[ \\begin \{array\}\{c\} 0\\\\\\noalign\{\\medskip\}-1\\end \{array\} \+
+\\right] " }}{PARA 11 "" 1 "" {XPPMATH 20 "%#%?G" }}{PARA 6 "" 1 "" 
+{TEXT 202 85 " \\left[ \\begin \{array\}\{c\} 3/16\\\\\\noalign\{\\med
+skip\}\{\\frac \{21\}\{16\}\}" }{TEXT 202 27 "\n\\end \{array\} \\righ
+t] " }}{PARA 11 "" 1 "" {XPPMATH 20 "%#%?G" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "I\"tG6\"" }}}{EXCHG {PARA 0 "> " 0 "" {XPPEDIT 19 1 "Redu
+cedRowEchelonForm(Matrix([[-4, 3, 2, -4], [-4, 5, 0, -4]])); 1;" "C$-I
+6ReducedRowEchelonFormG6\"6#-I'MatrixG6$%*protectedGI(_syslibGF%6#7$7&
+!\"%\"\"$\"\"#F/7&F/\"\"&\"\"!F/\"\"\"" }}{PARA 11 "" 1 "" {XPPMATH 20
+ "-I'RTABLEG6\"6%\"*'>P%[\"-I'MATRIXGF$6#7$7&\"\"\"\"\"!#!\"&\"\"%F,7&
+F-F,!\"\"F-I'MatrixG6$%*protectedGI(_syslibGF$" }}}{EXCHG {PARA 0 "> "
+ 0 "" {XPPEDIT 19 1 "RandomMatrix(3, 3, generator = -9 .. 9); 1;" "C$-
+I-RandomMatrixG6\"6%\"\"$F'/I*generatorGF%;!\"*\"\"*\"\"\"" }}{PARA 11
+ "" 1 "" {XPPMATH 20 "-I'RTABLEG6\"6%\"*)QK0:-I'MATRIXGF$6#7%7%!\"$\"
+\"$!\"*7%\"\")!\"(\"\"(7%F-\"\"#F2I'MatrixG6$%*protectedGI(_syslibGF$"
+ }}}{EXCHG {PARA 0 "> " 0 "" {XPPEDIT 19 1 "" "%#%?G" }}}{EXCHG {PARA 
+0 "> " 0 "" {XPPEDIT 19 1 "a := RandomMatrix(3, 3, generator = -5 .. 5
+); 1; b := RandomMatrix(3, 3, generator = -5 .. 5); 1; Multiply(a, b);
+ 1; Multiply(b, a); 1; latex(a); 1; latex(b); 1; latex(Multiply(a, b))
+; 1; latex(Multiply(b, a)); 1;" "C2>I\"aG6\"-I-RandomMatrixGF%6%\"\"$F
+)/I*generatorGF%;!\"&\"\"&\"\"\">I\"bGF%F&F/-I)MultiplyG6$%*protectedG
+I(_syslibGF%6$F$F1F/-F36$F1F$F/-I&latexGF46#F$F/-F;6#F1F/-F;6#F2F/-F;6
+#F8F/" }}{PARA 11 "" 1 "" {XPPMATH 20 "-I%mrowG6#/I+modulenameG6\"I,Ty
+pesettingGI(_syslibGF'6%-I#miGF$6#Q\"aF'-I#moGF$63Q#:=F'/%%formGQ&infi
+xF'/%&fenceGQ&falseF'/%*separatorGF8/%'lspaceGQ/thickmathspaceF'/%'rsp
+aceGF=/%)stretchyGF8/%*symmetricGF8/%(maxsizeGQ)infinityF'/%(minsizeGQ
+\"1F'/%(largeopGF8/%.movablelimitsGF8/%'accentGF8/%0font_style_nameGQ*
+2D~OutputF'/%%sizeGQ#12F'/%+foregroundGQ*[0,0,255]F'/%+backgroundGQ.[2
+55,255,255]F'-F#6%-F063Q\"[F'/F4Q'prefixF'/F7Q%trueF'F9/F<Q.thinmathsp
+aceF'/F?F`o/FAF^oFBFDFGFJFLFNFPFSFVFY-F#6#-I'mtableGF$6%-I$mtrGF$6%-I$
+mtdGF$6#-I#mnGF$6#Q)&minus;4F'-F\\p6#-F_p6#Q)&minus;1F'-F\\p6#-F_p6#Q
+\"3F'-Fio6%-F\\p6#-F_p6#Q\"2F'-F\\p6#-F_p6#Q)&minus;3F'-F\\p6#-F_p6#Q
+\"5F'-Fio6%-F\\p6#-F_p6#FIFhqFgp-F063Q\"]F'/F4Q(postfixF'F]oF9F_o/F?Q2
+verythinmathspaceF'FboFBFDFGFJFLFNFPFSFVFY" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "-I%mrowG6#/I+modulenameG6\"I,TypesettingGI(_syslibGF'6%-I
+#miGF$6#Q\"bF'-I#moGF$63Q#:=F'/%%formGQ&infixF'/%&fenceGQ&falseF'/%*se
+paratorGF8/%'lspaceGQ/thickmathspaceF'/%'rspaceGF=/%)stretchyGF8/%*sym
+metricGF8/%(maxsizeGQ)infinityF'/%(minsizeGQ\"1F'/%(largeopGF8/%.movab
+lelimitsGF8/%'accentGF8/%0font_style_nameGQ*2D~OutputF'/%%sizeGQ#12F'/
+%+foregroundGQ*[0,0,255]F'/%+backgroundGQ.[255,255,255]F'-F#6%-F063Q\"
+[F'/F4Q'prefixF'/F7Q%trueF'F9/F<Q.thinmathspaceF'/F?F`o/FAF^oFBFDFGFJF
+LFNFPFSFVFY-F#6#-I'mtableGF$6%-I$mtrGF$6%-I$mtdGF$6#-I#mnGF$6#Q)&minus
+;2F'-F\\p6#-F_p6#Q\"4F'-F\\p6#-F_p6#Q\"3F'-Fio6%-F\\p6#-F_p6#Q)&minus;
+1F'-F\\p6#-F_p6#FIF^q-Fio6%Fbp-F\\p6#-F_p6#Q\"0F'-F\\p6#-F_p6#Q\"2F'-F
+063Q\"]F'/F4Q(postfixF'F]oF9F_o/F?Q2verythinmathspaceF'FboFBFDFGFJFLFN
+FPFSFVFY" }}{PARA 11 "" 1 "" {XPPMATH 20 "-I%mrowG6#/I+modulenameG6\"I
+,TypesettingGI(_syslibGF'6%-I#moGF$63Q\"[F'/%%formGQ'prefixF'/%&fenceG
+Q%trueF'/%*separatorGQ&falseF'/%'lspaceGQ.thinmathspaceF'/%'rspaceGF:/
+%)stretchyGF4/%*symmetricGF7/%(maxsizeGQ)infinityF'/%(minsizeGQ\"1F'/%
+(largeopGF7/%.movablelimitsGF7/%'accentGF7/%0font_style_nameGQ*2D~Outp
+utF'/%%sizeGQ#12F'/%+foregroundGQ*[0,0,255]F'/%+backgroundGQ.[255,255,
+255]F'-F#6#-I'mtableGF$6%-I$mtrGF$6%-I$mtdGF$6#-I#mnGF$6#Q#21F'-F\\o6#
+-F_o6#Q*&minus;17F'-F\\o6#-F_o6#Q)&minus;5F'-Fin6%-F\\o6#-F_o6#Q#19F'-
+F\\o6#-F_o6#Q\"5F'F^p-Fin6%Fcp-F\\o6#-F_o6#Q\"9F'-F\\o6#-F_o6#Q\"4F'-F
+,63Q\"]F'/F0Q(postfixF'F2F5F8/F<Q2verythinmathspaceF'F=F?FAFDFGFIFKFMF
+PFSFV" }}{PARA 11 "" 1 "" {XPPMATH 20 "-I%mrowG6#/I+modulenameG6\"I,Ty
+pesettingGI(_syslibGF'6%-I#moGF$63Q\"[F'/%%formGQ'prefixF'/%&fenceGQ%t
+rueF'/%*separatorGQ&falseF'/%'lspaceGQ.thinmathspaceF'/%'rspaceGF:/%)s
+tretchyGF4/%*symmetricGF7/%(maxsizeGQ)infinityF'/%(minsizeGQ\"1F'/%(la
+rgeopGF7/%.movablelimitsGF7/%'accentGF7/%0font_style_nameGQ*2D~OutputF
+'/%%sizeGQ#12F'/%+foregroundGQ*[0,0,255]F'/%+backgroundGQ.[255,255,255
+]F'-F#6#-I'mtableGF$6%-I$mtrGF$6%-I$mtdGF$6#-I#mnGF$6#Q#19F'-F\\o6#-F_
+o6#Q\"5F'-F\\o6#-F_o6#Q#23F'-Fin6%Fbo-F\\o6#-F_o6#Q)&minus;7F'-F\\o6#-
+F_o6#Q)&minus;1F'-Fin6%-F\\o6#-F_o6#Q*&minus;14F'-F\\o6#-F_o6#Q\"6F'-F
+\\o6#-F_o6#Q#18F'-F,63Q\"]F'/F0Q(postfixF'F2F5F8/F<Q2verythinmathspace
+F'F=F?FAFDFGFIFKFMFPFSFV" }}{PARA 6 "" 1 "" {TEXT 202 75 " \\left[ \\b
+egin \{array\}\{ccc\} -4&-1&3\\\\\\noalign\{\\medskip\}2&-3&5\n" }
+{TEXT 202 58 "\\\\\\noalign\{\\medskip\}1&5&3\\end \{array\} \\right] \+
+\n" }{TEXT 202 75 " \\left[ \\begin \{array\}\{ccc\} -2&4&3\\\\\\noali
+gn\{\\medskip\}-1&1&-1\n" }{TEXT 202 58 "\\\\\\noalign\{\\medskip\}4&0
+&2\\end \{array\} \\right] \n" }{TEXT 202 78 " \\left[ \\begin \{array
+\}\{ccc\} 21&-17&-5\\\\\\noalign\{\\medskip\}19&5&19\n" }{TEXT 202 58 
+"\\\\\\noalign\{\\medskip\}5&9&4\\end \{array\} \\right] \n" }{TEXT 
+202 76 " \\left[ \\begin \{array\}\{ccc\} 19&5&23\\\\\\noalign\{\\meds
+kip\}5&-7&-1\n" }{TEXT 202 59 "\\\\\\noalign\{\\medskip\}-14&6&18\\end
+ \{array\} \\right] " }}}{EXCHG {PARA 0 "> " 0 "" {XPPEDIT 19 1 "latex
+('`\\tta`'); 1;" "C$-I&latexG6$%*protectedGI(_syslibG6\"6#.I%\\ttaGF(
+\"\"\"" }}{PARA 6 "" 1 "" {TEXT 202 32 "\\mbox \{\{\\tt `        ta`\}
+\}" }}}{EXCHG {PARA 0 "> " 0 "" {XPPEDIT 19 1 "a := RandomMatrix(2, 2,
+ generator = -5 .. 5); 1; x := RandomMatrix(2, 2, generator = -5 .. 5)
+; 1; a+x; 1; Multiply(a+x, a+x); 1; Multiply(a, a)+2*Multiply(a, x)+Mu
+ltiply(x, x); 1; latex(a); 1; latex(x); 1; latex(Multiply(a+x, a+x)); \+
+1; latex(Multiply(a, a)+2*Multiply(a, x)+Multiply(x, x)); 1;" "C4>I\"a
+G6\"-I-RandomMatrixGF%6%\"\"#F)/I*generatorGF%;!\"&\"\"&\"\"\">I\"xGF%
+F&F/,&F$F/F1F/F/-I)MultiplyG6$%*protectedGI(_syslibGF%6$F2F2F/,(-F46$F
+$F$F/*&F)F/-F46$F$F1F/F/-F46$F1F1F/F/-I&latexGF56#F$F/-FB6#F1F/-FB6#F3
+F/-FB6#F9F/" }}{PARA 11 "" 1 "" {XPPMATH 20 "-I%mrowG6#/I+modulenameG6
+\"I,TypesettingGI(_syslibGF'6%-I#miGF$6#Q\"aF'-I#moGF$63Q#:=F'/%%formG
+Q&infixF'/%&fenceGQ&falseF'/%*separatorGF8/%'lspaceGQ/thickmathspaceF'
+/%'rspaceGF=/%)stretchyGF8/%*symmetricGF8/%(maxsizeGQ)infinityF'/%(min
+sizeGQ\"1F'/%(largeopGF8/%.movablelimitsGF8/%'accentGF8/%0font_style_n
+ameGQ*2D~OutputF'/%%sizeGQ#12F'/%+foregroundGQ*[0,0,255]F'/%+backgroun
+dGQ.[255,255,255]F'-F#6%-F063Q\"[F'/F4Q'prefixF'/F7Q%trueF'F9/F<Q.thin
+mathspaceF'/F?F`o/FAF^oFBFDFGFJFLFNFPFSFVFY-F#6#-I'mtableGF$6$-I$mtrGF
+$6$-I$mtdGF$6#-I#mnGF$6#Q\"5F'-F\\p6#-F_p6#Q\"3F'-Fio6$-F\\p6#-F_p6#Q)
+&minus;3F'-F\\p6#-F_p6#Q)&minus;2F'-F063Q\"]F'/F4Q(postfixF'F]oF9F_o/F
+?Q2verythinmathspaceF'FboFBFDFGFJFLFNFPFSFVFY" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "-I%mrowG6#/I+modulenameG6\"I,TypesettingGI(_syslibGF'6%-I
+#miGF$6#Q\"xF'-I#moGF$63Q#:=F'/%%formGQ&infixF'/%&fenceGQ&falseF'/%*se
+paratorGF8/%'lspaceGQ/thickmathspaceF'/%'rspaceGF=/%)stretchyGF8/%*sym
+metricGF8/%(maxsizeGQ)infinityF'/%(minsizeGQ\"1F'/%(largeopGF8/%.movab
+lelimitsGF8/%'accentGF8/%0font_style_nameGQ*2D~OutputF'/%%sizeGQ#12F'/
+%+foregroundGQ*[0,0,255]F'/%+backgroundGQ.[255,255,255]F'-F#6%-F063Q\"
+[F'/F4Q'prefixF'/F7Q%trueF'F9/F<Q.thinmathspaceF'/F?F`o/FAF^oFBFDFGFJF
+LFNFPFSFVFY-F#6#-I'mtableGF$6$-I$mtrGF$6$-I$mtdGF$6#-I#mnGF$6#Q)&minus
+;5F'F[p-Fio6$-F\\p6#-F_p6#Q)&minus;2F'-F\\p6#-F_p6#FI-F063Q\"]F'/F4Q(p
+ostfixF'F]oF9F_o/F?Q2verythinmathspaceF'FboFBFDFGFJFLFNFPFSFVFY" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "-I%mrowG6#/I+modulenameG6\"I,Typesetting
+GI(_syslibGF'6%-I#moGF$63Q\"[F'/%%formGQ'prefixF'/%&fenceGQ%trueF'/%*s
+eparatorGQ&falseF'/%'lspaceGQ.thinmathspaceF'/%'rspaceGF:/%)stretchyGF
+4/%*symmetricGF7/%(maxsizeGQ)infinityF'/%(minsizeGQ\"1F'/%(largeopGF7/
+%.movablelimitsGF7/%'accentGF7/%0font_style_nameGQ*2D~OutputF'/%%sizeG
+Q#12F'/%+foregroundGQ*[0,0,255]F'/%+backgroundGQ.[255,255,255]F'-F#6#-
+I'mtableGF$6$-I$mtrGF$6$-I$mtdGF$6#-I#mnGF$6#Q\"0F'-F\\o6#-F_o6#Q)&min
+us;2F'-Fin6$-F\\o6#-F_o6#Q)&minus;5F'-F\\o6#-F_o6#Q)&minus;1F'-F,63Q\"
+]F'/F0Q(postfixF'F2F5F8/F<Q2verythinmathspaceF'F=F?FAFDFGFIFKFMFPFSFV"
+ }}{PARA 11 "" 1 "" {XPPMATH 20 "-I%mrowG6#/I+modulenameG6\"I,Typesett
+ingGI(_syslibGF'6%-I#moGF$63Q\"[F'/%%formGQ'prefixF'/%&fenceGQ%trueF'/
+%*separatorGQ&falseF'/%'lspaceGQ.thinmathspaceF'/%'rspaceGF:/%)stretch
+yGF4/%*symmetricGF7/%(maxsizeGQ)infinityF'/%(minsizeGQ\"1F'/%(largeopG
+F7/%.movablelimitsGF7/%'accentGF7/%0font_style_nameGQ*2D~OutputF'/%%si
+zeGQ#12F'/%+foregroundGQ*[0,0,255]F'/%+backgroundGQ.[255,255,255]F'-F#
+6#-I'mtableGF$6$-I$mtrGF$6$-I$mtdGF$6#-I#mnGF$6#Q#10F'-F\\o6#-F_o6#Q\"
+2F'-Fin6$-F\\o6#-F_o6#Q\"5F'-F\\o6#-F_o6#Q#11F'-F,63Q\"]F'/F0Q(postfix
+F'F2F5F8/F<Q2verythinmathspaceF'F=F?FAFDFGFIFKFMFPFSFV" }}{PARA 11 "" 
+1 "" {XPPMATH 20 "-I%mrowG6#/I+modulenameG6\"I,TypesettingGI(_syslibGF
+'6%-I#moGF$63Q\"[F'/%%formGQ'prefixF'/%&fenceGQ%trueF'/%*separatorGQ&f
+alseF'/%'lspaceGQ.thinmathspaceF'/%'rspaceGF:/%)stretchyGF4/%*symmetri
+cGF7/%(maxsizeGQ)infinityF'/%(minsizeGQ\"1F'/%(largeopGF7/%.movablelim
+itsGF7/%'accentGF7/%0font_style_nameGQ*2D~OutputF'/%%sizeGQ#12F'/%+for
+egroundGQ*[0,0,255]F'/%+backgroundGQ.[255,255,255]F'-F#6#-I'mtableGF$6
+$-I$mtrGF$6$-I$mtdGF$6#-I#mnGF$6#Q*&minus;11F'-F\\o6#-F_o6#Q*&minus;15
+F'-Fin6$-F\\o6#-F_o6#Q#37F'-F\\o6#-F_o6#Q#32F'-F,63Q\"]F'/F0Q(postfixF
+'F2F5F8/F<Q2verythinmathspaceF'F=F?FAFDFGFIFKFMFPFSFV" }}{PARA 6 "" 1 
+"" {TEXT 202 84 " \\left[ \\begin \{array\}\{cc\} 5&3\\\\\\noalign\{
+\\medskip\}-3&-2\\end \{array\}\n" }{TEXT 202 12 " \\right] \n" }{TEXT
+ 202 85 " \\left[ \\begin \{array\}\{cc\} -5&-5\\\\\\noalign\{\\medski
+p\}-2&1\\end \{array\}\n" }{TEXT 202 12 " \\right] \n" }{TEXT 202 84 "
+ \\left[ \\begin \{array\}\{cc\} 10&2\\\\\\noalign\{\\medskip\}5&11\\e
+nd \{array\}\n" }{TEXT 202 12 " \\right] \n" }{TEXT 202 73 " \\left[ \+
+\\begin \{array\}\{cc\} -11&-15\\\\\\noalign\{\\medskip\}37&32\n" }
+{TEXT 202 25 "\\end \{array\} \\right] " }}}{EXCHG {PARA 0 "> " 0 "" 
+{XPPEDIT 19 1 "" "%#%?G" }}{PARA 8 "" 1 "" {TEXT 203 33 
