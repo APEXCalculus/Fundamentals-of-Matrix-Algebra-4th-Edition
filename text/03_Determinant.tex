@@ -66,7 +66,7 @@ $$C_{3,2} = (-1)^{3+2}\tta_{3,2} = (-1)^5(-6) = 6.$$
 The minor $\ttb_{2,1}$ is found by removing the second row and first column of \ttb\ then taking the determinant.
 $$\ttb = \bmx{cccc}1&2&0&8\\-3&5&7&2\\-1&9&-4&6\\1&1&1&1\emx \Rightarrow \bmx{cccc}\textbf{\sout{1}}&2&0&8\\ \textbf{\sout{-3}}&\textbf{\sout{5}}&\textbf{\sout{7}}&\textbf{\sout{2}}\\ \textbf{\sout{-1}}&9&-4&6\\ \textbf{\sout{1}}&1&1&1\emx \Rightarrow \bmx{ccc}2&0&8\\9&-4&6\\1&1&1\emx $$
 $$\ttb_{2,1} = \bdt{ccc}2&0&8\\9&-4&6\\1&1&1\edt \stackrel{!}{=} \ ?$$
-We're a bit stuck. We don't know how to find the determinate of this $3\times 3$ matrix. We'll come back to this later. The corresponding cofactor is
+We're a bit stuck. We don't know how to find the determinant of this $3\times 3$ matrix. We'll come back to this later. The corresponding cofactor is
 $$C_{2,1} = (-1)^{2+1}\ttb_{2,1} = -\ttb_{2,1},$$ whatever this number happens to be.
 
 
@@ -74,7 +74,7 @@ The minor $\ttb_{4,3}$ is found by removing the fourth row and third column of \
 $$\ttb = \bmx{cccc}1&2&0&8\\-3&5&7&2\\-1&9&-4&6\\1&1&1&1\emx \Rightarrow \bmx{cccc}1&2&\textbf{\sout{0}}&8\\-3&5&\textbf{\sout{7}}&2\\-1&9&\textbf{\sout{-4}}&6\\ \textbf{\sout{1}}&\textbf{\sout{1}}&\textbf{\sout{1}}&\textbf{\sout{1}}\emx \Rightarrow \bmx{ccc}1&2&8\\-3&5&2\\-1&9&6\emx$$
 $$\ttb_{4,3} = \bdt{ccc}1&2&8\\-3&5&2\\-1&9&6\edt \stackrel{!}{=}\ ?$$
 Again, we're stuck. We won't be able to fully compute $C_{4,3}$; all we know so far is that
-$$C_{4,3} = (-1)^{4+3}\ttb_{4,3} = (-1)\ttb_{4,3}.$$ Once we learn how to compute determinates for matrices larger than $2\times 2$ we can come back and finish this exercise.}\\ % \eexset
+$$C_{4,3} = (-1)^{4+3}\ttb_{4,3} = (-1)\ttb_{4,3}.$$ Once we learn how to compute determinants for matrices larger than $2\times 2$ we can come back and finish this exercise.}\\ % \eexset
 
 In our previous example we ran into a bit of trouble. By our definition, in order to compute a minor of an $n\times n$ matrix we needed to compute the determinant of a $(n-1)\times(n-1)$ matrix. This was fine when we started with a $3\times3$ matrix, but when we got up to a $4\times4$ matrix (and larger) we run into trouble.
 
@@ -224,7 +224,7 @@ Thus the determinant is $$\det{\tta} = 3(1)+6(-3)+7(-6) = -57.$$
 
 \example{ex_determinant_4}{Find the determinant of $$\tta = \bmx{cccc} 1&2&1&2\\-1&2&3&4\\8&5&-3&1\\5&9&-6&3\emx.$$
 }
-{This, quite frankly, will take quite a bit of work. In order to compute this determinant, we need to compute 4 minors, each of which requires finding the determinant of a $3\times 3$ matrix! Complaining won't get us any closer to the solution,\footnote{But it might make us feel a little better. Glance ahead: do you see how much work we have to do?!?} so let's get started. We first compute the cofactors:
+{This, quite frankly, will require some work. In order to compute this determinant, we need to compute 4 minors, each of which requires finding the determinant of a $3\times 3$ matrix! Complaining won't get us any closer to the solution,\footnote{But complaining might make us feel a little better. Glance ahead: do you see how much work we have to do?!} so let's get started. We first compute the cofactors:
 \begin{align*}C_{1,1} &= (-1)^{1+1}\tta_{1,1}\\
 	&= 1\cdot\bdt{ccc}2&3&4\\5&-3&1\\9&-6&3\edt \quad\quad\quad \left(\parbox{100pt}{\scriptsize we must compute the determinant of this $3\times 3$ matrix}\right)\\
 	&= 2\cdot(-1)^{1+1}\bdt{cc}-3&1\\-6&3\edt + 3\cdot(-1)^{1+2}\bdt{cc}5&1\\9&3\edt + 4\cdot(-1)^{1+3}\bdt{cc}5&-3\\9&-6\edt \\
@@ -234,7 +234,7 @@ Thus the determinant is $$\det{\tta} = 3(1)+6(-3)+7(-6) = -57.$$
 
 \begin{align*}C_{1,2} &= (-1)^{1+2}\tta_{1,2}\\
 	&= (-1)\cdot\bdt{ccc}-1&3&4\\8&-3&1\\5&-6&3\edt \quad\quad\quad \left(\parbox{100pt}{\scriptsize we must compute the determinant of this $3\times 3$ matrix}\right)\\
-	&= (-1)\underbrace{\left[(-1)\cdot(-1)^{1+1}\bdt{cc}-3&1\\-6&3\edt + 3\cdot(-1)^{1+2}\bdt{cc}8&1\\5&3\edt + 4\cdot(-1)^{1+3}\bdt{cc}8&-3\\5&-6\edt \right]}_{\parbox{150pt}{\centering\scriptsize the determinate of the $3 \times 3$ matrix}} \\
+	&= (-1)\underbrace{\left[(-1)\cdot(-1)^{1+1}\bdt{cc}-3&1\\-6&3\edt + 3\cdot(-1)^{1+2}\bdt{cc}8&1\\5&3\edt + 4\cdot(-1)^{1+3}\bdt{cc}8&-3\\5&-6\edt \right]}_{\parbox{150pt}{\centering\scriptsize the determinant of the $3 \times 3$ matrix}} \\
 	&= (-1)\left[(-1)(-3)+3(-19)+4(-33) \right]\\
 	&= 186
 \end{align*}
@@ -250,7 +250,7 @@ Thus the determinant is $$\det{\tta} = 3(1)+6(-3)+7(-6) = -57.$$
 
 \begin{align*}C_{1,4} &= (-1)^{1+4}\tta_{1,4}\\
 	&= (-1)\cdot\bdt{ccc}-1&2&3\\8&5&-3\\5&9&-6\edt \quad\quad\quad \left(\parbox{100pt}{\scriptsize we must compute the determinant of this $3\times 3$ matrix}\right)\\
-	&= (-1)\underbrace{\left[(-1)\cdot(-1)^{1+1}\bdt{cc}5&-3\\9&-6\edt + 2\cdot(-1)^{1+2}\bdt{cc}8&-3\\5&-6\edt + 3\cdot(-1)^{1+3}\bdt{cc}8&5\\5&9\edt\right]}_{\parbox{150pt}{\centering\scriptsize the determinate of the $3 \times 3$ matrix}} \\
+	&= (-1)\underbrace{\left[(-1)\cdot(-1)^{1+1}\bdt{cc}5&-3\\9&-6\edt + 2\cdot(-1)^{1+2}\bdt{cc}8&-3\\5&-6\edt + 3\cdot(-1)^{1+3}\bdt{cc}8&5\\5&9\edt\right]}_{\parbox{150pt}{\centering\scriptsize the determinant of the $3 \times 3$ matrix}} \\
 	&= (-1)\left[(-1)(-3)+2(33)+3(47)\right]\\
 	&= -210
 \end{align*}
