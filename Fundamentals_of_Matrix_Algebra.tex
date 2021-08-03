@@ -53,13 +53,26 @@ textwidth=345pt, inner=1in,includeheadfoot]{geometry}}{}
 %\usepackage{fontspec}
 \usepackage{mathspec}
 
-\setallmainfonts[Mapping=tex-text]{Calibri}
-\setmainfont[Mapping=tex-text]{Calibri}
-\setsansfont[Mapping=tex-text]{Calibri}
+\setallmainfonts(Digits,Latin)[Ligatures=TeX]{Calibri}
+\setsansfont[Ligatures=TeX]{Calibri}
+\setmathsfont(Greek)[Ligatures=TeX]{[lmroman10-italic]}
 
-\setmathsfont(Greek){[cmmi10]}
+\newfontface\calligraphyfont{Lucida Calligraphy.ttf}[Scale=2.5]
+\newfontfamily\lmroman{lmroman10}[
+  Extension= .otf ,
+  UprightFont = *-regular ,
+  ItalicFont = *-italic ,
+  SlantedFont = lmromanslant10-regular ,
+  BoldFont = *-bold ,
+  BoldItalicFont = *-bolditalic ,
+  SmallCapsFont = lmromancaps10-regular
+]
+
+\colorlet{gregblue}{blue!30!black}
 
 
+\newcommand{\versionnum}{3.1110}
+\newcommand{\edition}{Fourth}
 
 \begin{document}
 
@@ -83,9 +96,6 @@ textwidth=345pt, inner=1in,includeheadfoot]{geometry}}{}
 
 \normalem
 
-%%%\setallmainfonts[Mapping=tex-text]{Calibri}
-%%%%\setmainfont[Mapping=tex-text]{Calibri}
-%%%%\setsansfont[Mapping=tex-text]{Calibri}
 \sffamily
 
 
@@ -102,7 +112,7 @@ textwidth=345pt, inner=1in,includeheadfoot]{geometry}}{}
 \frontmatter
 
 \title{\textsc{Fundamentals of Matrix Algebra}\\
-{\small Version 2.1011}}
+{\small Version \versionnum}}
 \author{Gregory N. Hartman, Ph.D.}
 \date{}
 
