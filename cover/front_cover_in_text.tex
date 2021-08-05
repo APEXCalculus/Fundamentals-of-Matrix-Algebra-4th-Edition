@@ -61,15 +61,15 @@ opacity=0.4]{#2};
 }
 
 %\node[yshift=5.5cm,scale=4,opacity=.5,blue] at (current page.center) {\Huge \textit{of}};
-\node[yshift=5.5cm,scale=4,opacity=.5,blue] at (current page.center) {\fontspec[Scale=2.5]{Lucida Calligraphy}\itshape of};
+\node[yshift=5.5cm,scale=4,opacity=.5,blue] at (current page.center) {\calligraphyfont of};
 \ifthenelse{\boolean{ipadsize}}
-{\node[yshift=7cm,scale=1.9,blue!30!black] at (current page.center) {\fontspec[Scale=2.5]{[cmcsc10]} Fundamentals};
-\node[yshift=4cm,scale=1.9,blue!30!black] at (current page.center) {\fontspec[Scale=2.5]{[cmcsc10]} Matrix Algebra};
-\node[xshift=-1cm,yshift=2.5cm,scale=1,blue!30!black,,left color=yellow!30,right color=yellow] at (current page.center) {\fontspec[Scale=1]{[cmsl10]} \ \hskip 14cm Second Edition};}
-{\node[yshift=7cm,scale=2,blue!30!black] at (current page.center) {\fontspec[Scale=2.5]{[cmcsc10]} Fundamentals};
-\node[yshift=4cm,scale=2,blue!30!black] at (current page.center) {\fontspec[Scale=2.5]{[cmcsc10]} Matrix Algebra};
-\node[xshift=-1cm,yshift=2.5cm,scale=1,blue!30!black,left color=blue!10,right color=blue!50] at (current page.center) {\fontspec[Scale=1]{[cmsl10]} \ \hskip 14cm Third Edition};}
-%\node[xshift=3.45in,yshift=2.5cm,scale=1,blue!30!black,left color=yellow!30,right color=yellow] at (current page.center) {\fontspec[Scale=1]{[cmsl10]} \ \hskip 5.25in Second Edition};
+{\node[yshift=7cm,scale=3.9, color=gregblue] at (current page.center) {\lmroman \textsc{Fundamentals}};
+\node[yshift=4cm,scale=3.9, color=gregblue] at (current page.center) {\lmroman \textsc{Matrix Algebra}};
+\node[xshift=-1cm,yshift=2.5cm,scale=1,color=gregblue,,left color=yellow!30,right color=yellow] at (current page.center) {\lmroman \itshape \ \hskip 14cm Second Edition};}
+{\node[yshift=7cm,scale=5,color=gregblue] at (current page.center) {\lmroman \textsc{Fundamentals}};
+\node[yshift=4cm,scale=5,color=gregblue] at (current page.center) {\lmroman \textsc{Matrix Algebra}};
+\node[xshift=-1cm,yshift=2.5cm,scale=1,color=gregblue,left color=blue!10,right color=blue!50] at (current page.center) {\lmroman \itshape \ \hskip 14cm \edition{} Edition};}
+%\node[xshift=3.45in,yshift=2.5cm,scale=1,color=gregblue,left color=yellow!30,right color=yellow] at (current page.center) {\lmroman \itshape \ \hskip 5.25in Second Edition};
 
 \draw ($(current page.center)!.25!(current page.south)$) node  {
 \begin{tikzpicture}[scale=5,>=latex]
@@ -84,6 +84,6 @@ opacity=0.4]{#2};
 
 %\nodeshadowed [at={($(current page.center)!.75!(current page.south)$)}] {\huge $\left[ \begin{array}{cc} \cos \theta & -\sin \theta \\ \sin \theta & \cos \theta \end{array}\right] $};
 
-\draw (4.5in,-8in) node [scale=1,blue!30!black] {\fontspec[Scale=2]{[cmr10]} Gregory Hartman};
+\draw (4.5in,-8in) node [scale=2,color=gregblue] {\lmroman Gregory Hartman};
 
 \end{tikzpicture}
