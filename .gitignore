@@ -20,6 +20,9 @@
 #*.log
 *.tmp
 *.tps
+
+## macOS Finder metadata
+*.DS_Store
 #
 ## Don't skip these files
 !CalculusI.aux
