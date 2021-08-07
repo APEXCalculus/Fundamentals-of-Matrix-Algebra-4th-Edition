@@ -44,7 +44,7 @@ Wow. That was a lot simpler than computing all that we did in Example \ref{ex_de
 }
 { At first glance, we think ``I don't want to find the determinant of a $5\times 5$ matrix!'' However, using our newfound knowledge, we see that things are not that bad. In fact, this problem is very easy. 
 
-What row or column should we choose to find the determinant along? There are two obvious choices: the first column or the last row. Both have 4 zeros in them. We choose the first column.\footnote{We do not choose this because it is the better choice; both options are good. We simply had to make a choice.} We omit most of the cofactor expansion, since most of it is just 0:
+What row or column should we choose to find the determinant along? There are two obvious choices: the first column or the last row. Both have 4 zeros in them. We choose the first column.\footnote{Either option is fine. We simply had to make a choice.} We omit most of the cofactor expansion, since most of it is just 0:
 $$\det{\tta} = 1\cdot (-1)^{1+1}\cdot\bdt{cccc}6&7&8&9\\0&10&11&12\\0&0&13&14\\0&0&0&15\edt.$$
 
 Similarly, this determinant is not bad to compute; we again choose to use cofactor expansion along the first column. Note: technically, this cofactor expansion is $6\cdot(-1)^{1+1}A_{1,1}$; we are going to drop the $(-1)^{1+1}$ terms from here on out in this example (it will show up a lot...).
@@ -64,7 +64,7 @@ We see that the final determinant is the product of the diagonal entries. This w
 The determinant of a triangular matrix is the product of its diagonal elements.
 }
 
-It is now again time to start thinking like a mathematician. Remember, mathematicians see something new and often ask ``How does this relate to things I already know?'' So now we ask, ``If we change a matrix in some way, how is it's determinant changed?''
+It is now again time to start thinking like a mathematician. Remember, mathematicians see something new and often ask ``How does this relate to things I already know?'' So now we ask, ``If we change a matrix in some way, how is its determinant changed?''
 
 The standard way that we change matrices is through elementary row operations. If we perform an elementary row operation on a matrix, how will the determinant of the new matrix compare to the determinant of the original matrix?
 
@@ -255,7 +255,7 @@ Let \tta\ and \ttb\ be $n\times n$ matrices and let $k$ be a scalar. The followi
 \end{enumerate}
 }
 
-This last statement of the above theorem is significant: what happens if $\det{\tta} = 0$? It seems that $\det{\ttai} = $``$1/0$'', which is undefined. There actually isn't a problem here; it turns out that if $\det{\tta}=0$, then \tta\ is not invertible (hence part 5 of Theorem \ref{thm:determinant_properties}). This allows us to add on to our Invertible Matrix Theorem.
+This last statement of the above theorem is significant: what happens if $\det{\tta} = 0$? It seems that $\det{\ttai} = $``$1/0$'', which is undefined. There actually isn't a problem here; it turns out that if $\det{\tta}=0$, then \tta\ is not invertible (hence part 5 of Theorem \ref{thm:determinant_properties}). This allows us to add on to the Invertible Matrix Theorem.
 
 \theorem{thm:IMT_det}{\index{Invertible Matrix Theorem}\textbf{Invertible Matrix Theorem}\\
 
