@@ -224,7 +224,7 @@ Thus the determinant is $$\det{\tta} = 3(1)+6(-3)+7(-6) = -57.$$
 
 \example{ex_determinant_4}{Find the determinant of $$\tta = \bmx{cccc} 1&2&1&2\\-1&2&3&4\\8&5&-3&1\\5&9&-6&3\emx.$$
 }
-{This, quite frankly, will require some work. In order to compute this determinant, we need to compute 4 minors, each of which requires finding the determinant of a $3\times 3$ matrix! Complaining won't get us any closer to the solution,\footnote{But complaining might make us feel a little better. Glance ahead: do you see how much work we have to do?!} so let's get started. We first compute the cofactors:
+{This, quite frankly, will require some work. In order to compute this determinant, we need to compute 4 minors, each of which requires finding the determinant of a $3\times 3$ matrix! Complaining won't get us any closer to the solution,\footnote{The good news is that the individual steps are easy, formulaic, and repetitive. However, it's still a lot of work.} so let's get started. We first compute the cofactors:
 \begin{align*}C_{1,1} &= (-1)^{1+1}\tta_{1,1}\\
 	&= 1\cdot\bdt{ccc}2&3&4\\5&-3&1\\9&-6&3\edt \quad\quad\quad \left(\parbox{100pt}{\scriptsize we must compute the determinant of this $3\times 3$ matrix}\right)\\
 	&= 2\cdot(-1)^{1+1}\bdt{cc}-3&1\\-6&3\edt + 3\cdot(-1)^{1+2}\bdt{cc}5&1\\9&3\edt + 4\cdot(-1)^{1+3}\bdt{cc}5&-3\\9&-6\edt \\

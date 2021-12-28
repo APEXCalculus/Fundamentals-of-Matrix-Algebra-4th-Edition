@@ -14,7 +14,7 @@ b&=r+g
 \end{align*}
 
 Let's rewrite these equations so that all variables are on the left of the equal sign and all constants are on the right. Also, for a bit more consistency, let's list the variables in alphabetical order in each equation. Therefore we can write the equations as
-\begin{equation}\begin{array}{ccccccc}
+\begin{equation}\begin{array}{*{7}{r}}
 b&+&g&+&r&=&30\\
  &-&2g&+&r&=&0\\
 -b&+&g&+&r&=&0
@@ -23,35 +23,36 @@ b&+&g&+&r&=&30\\
 As we mentioned before, there isn't just one ``right'' way of finding the solution to this system of equations. Here is another way to do it, a way that is a bit different from our method in Section \ref{sec:intro}. 
 
 First, let's add the first and last equations together, and write the result as a new
-third equation. This gives us:$$\begin{array}{ccccccc}
+third equation. This gives us:$$\begin{array}{*{7}{r}}
 b&+&g&+&r&=&30\\
  &-&2g&+&r&=&0\\
  & &2g&+&2r&=&30
 \end{array}.$$
 A nice feature of this is that the only equation with a $b$ in it is the first equation.
 
-Now let's multiply the second equation by $-\frac12$. This gives $$\begin{array}{ccccccc}
+\renewcommand{\arraystretch}{1.2}
+Now let's multiply the second equation by $-\frac12$. This gives $$\begin{array}{*{7}{r}}
 b&+&g&+&r&=&30\\
- & & g&-&1/2r&=&0\\
+ & & g&-&\frac{1}{2}r&=&0\\
  & &2g&+&2r&=&30
 \end{array}.$$
 
 Let's now do two steps in a row; our goal is to get rid of the $g$ coefficients in the first and third equations. In order to remove the $g$ in the first equation, let's multiply the second equation by $-1$ and add that to the first equation, replacing the first equation with that sum. To remove the $g$ in the third equation, let's multiply the second equation by $-2$ and add that to the third equation, replacing the third equation. Our new system of equations now becomes
-$$\begin{array}{ccccccc}
-b&+& & &3/2r&=&30\\
- & &g&-&1/2r&=&0\\
+$$\begin{array}{*{7}{r}}
+b&+& & &\frac{3}{2}r&=&30\\
+ & &g&-&\frac{1}{2}r&=&0\\
  & & & &3r&=&30
 \end{array}.$$
 
 Clearly we can multiply the third equation by $\frac13$ and find that $r=10$; let's make this our new third equation, giving
-$$\begin{array}{ccccccc}
-b&+& & &3/2r&=&30\\
- & &g&-&1/2r&=&0\\
+$$\begin{array}{*{7}{r}}
+b&+& & &\frac{3}{2}r&=&30\\
+ & &g&-&\frac{1}{2}r&=&0\\
  & & & &r&=&10
 \end{array}.$$
 
 Now let's get rid of the $r$'s in the first and second equation. To remove the $r$ in the first equation, let's multiply the third equation by $-\frac32$ and add the result to the first equation, replacing the first equation with that sum. To remove the $r$ in the second equation, we can multiply the third equation by $\frac12$ and add that to the second equation, replacing the second equation with that sum. This gives us:
-$$\begin{array}{ccccccc}
+$$\begin{array}{*{7}{r}}
 b& & & & &=&15\\
  & &g& & &=&5\\
  & & & &r&=&10
@@ -60,21 +61,24 @@ Clearly we have discovered the same result as when we solved this problem in Sec
 
 Now again revisit the idea that all that really matters are the coefficients and the constants. There is nothing special about the letters $b$, $g$ and $r$; we could have used $x$, $y$ and $z$ or $x_1$, $x_2$ and $x_3$. And even then, since we wrote our equations so carefully, we really didn't need to write the variable names at all as long as we put things ``in the right place.''
 
+\renewcommand{\arraystretch}{1.0}
 Let's look again at our system of equations in (\ref{eq:before_matrix}) and write the coefficients and the constants in a rectangular array. This time we won't ignore the zeros, but rather write them out.
 $$
-\begin{array}{ccccccc}
+\begin{array}{*{7}{r}}
 b&+&g&+&r&=&30\\
  &-&2g&+&r&=&0\\
 -b&+&g&+&r&=&0
 \end{array}
 \quad \Leftrightarrow \quad
-\bmx{cccc}
+\bmx{*{4}{J}}
 1&1&1&30\\
 0&-2&1&0\\
 -1&1&1&0\emx$$
 Notice how even the equal signs are gone; we don't need them, for we know that the last {\em column} contains the coefficients. 
 
-We have just created a {\em matrix}. The definition of matrix is remarkable only in how unremarkable it seems.
+We have just created a {\em matrix}. The definition of matrix is remarkable only in how unremarkable it seems. Matrices are a short, compact form of representing numbers and mathematical relationships; there are a few conventions we use for interpreting the information inside a matrix, but they are not difficult. As elsewhere in math, it's very important to know and understand what the rules mean, but again, these rules are straightforward and few in number.
+
+\vfill
 
 \enlargethispage{2\baselineskip}
 
@@ -105,11 +109,11 @@ We can use a shorthand to describe matrix operations; let $R_1$, $R_2$ represent
 %\small
 \begin{center}
 \begin{tabular}{ccc}
-$\begin{array}{ccccccc}
+    $\begin{array}{*{7}{r}}
 b&+&g&+&r&=&30\\
  &-&2g&+&r&=&0\\
 -b&+&g&+&r&=&0
-\end{array}$ &$\quad\quad$&$\bmx{cccc}1&1&1&30\\ 0&-2&1&0\\-1&1&1&0\emx$ 
+    \end{array}$ &$\quad\quad$&$\bmx{*{4}{J}}1&1&1&30\\ 0&-2&1&0\\-1&1&1&0\emx$ 
  \\
  \\
  \parbox{120pt}{\centering \small Replace equation 3 with the sum of equations 1 and 3}&& \parbox{120pt}{\centering \small Replace row 3 with the sum of rows 1 and 3.
@@ -119,11 +123,11 @@ $(R_1+R_3\rightarrow R_3)$}\\
 \end{tabular}
 
 \begin{tabular}{ccc}
-$\begin{array}{ccccccc}
+    $\begin{array}{*{7}{r}}
 b&+&g&+&r&=&30\\
  &-&2g&+&r&=&0\\
  & &2g&+&2r&=&30
-\end{array}$&$\quad\quad$&$\bmx{cccc}1&1&1&30\\ 0&-2&1&0\\0&2&2&30\emx$ 
+\end{array}$&$\quad\quad$&$\bmx{*{4}{J}}1&1&1&30\\ 0&-2&1&0\\0&2&2&30\emx$ 
  \\
  \\
   \parbox{120pt}{\centering \small Multiply equation 2 by $-\frac12$}&& \parbox{120pt}{\centering \small Multiply row 2 by $-\frac12$
@@ -132,11 +136,12 @@ $(-\frac12R_2\rightarrow R_2)$}
 \end{tabular}
 
 \begin{tabular}{ccc}
-$\begin{array}{ccccccc}
+\renewcommand{\arraystretch}{1.2}
+$\begin{array}{*{7}{r}}
 b&+&g&+&r&=&30\\
- &&g&+&-1/2r&=&0\\
+    &&g&+&-\frac{1}{2}r&=&0\\
  & &2g&+&2r&=&30
-\end{array}$&$\quad\quad$ &$\bmx{cccc}1&1&1&30\\ 0&1&-\frac12&0\\0&2&2&30\emx$ 
+\end{array}$&$\quad\quad$ &$\bmx{*{4}{J}}1&1&1&30\\ 0&1&-\frac12&0\\0&2&2&30\emx$ 
  \\
  \\
  \parbox{120pt}{\centering \small Replace equation 1 with the sum of $(-1)$ times equation 2 plus equation 1; 
@@ -150,13 +155,14 @@ b&+&g&+&r&=&30\\
 \\
 \end{tabular}
 
+\renewcommand{\arraystretch}{1.3}
 \begin{tabular}{ccc}
-$\begin{array}{ccccccc}
-b&+& & &3/2r&=&30\\
- & &g&-&1/2r&=&0\\
+$\begin{array}{*{7}{r}}
+    b&+& & &\frac{3}{2}r&=&30\\
+    & &g&-&\frac{1}{2}r&=&0\\
  & & & &3r&=&30
 \end{array}$ &$\quad\quad$ &
-$\bmx{cccc}1&0&\frac32&30\\0&1&-\frac12&0\\0&0&3&30\emx$
+$\bmx{*{4}{J}}1&0&\frac32&30\\0&1&-\frac12&0\\0&0&3&30\emx$
 \\
 \\
   \parbox{120pt}{\centering \small Multiply equation 3 by $\frac13$}
@@ -169,12 +175,12 @@ $\bmx{cccc}1&0&\frac32&30\\0&1&-\frac12&0\\0&0&3&30\emx$
 \end{tabular}
 
 \begin{tabular}{ccc}
-$\begin{array}{ccccccc}
-b&+& & &3/2r&=&30\\
- & &g&-&1/2r&=&0\\
+$\begin{array}{*{7}{r}}
+b&+& & &\frac{3}{2}r&=&30\\
+ & &g&-&\frac{1}{2}r&=&0\\
  & & & &r&=&10
 \end{array}$ &$\quad\quad$ &
-$\bmx{cccc}1&0&\frac32&30\\0&1&-\frac12&0\\0&0&1&10\emx$
+$\bmx{*{4}{J}}1&0&\frac32&30\\0&1&-\frac12&0\\0&0&1&10\emx$
 \\
 \\
 \parbox{120pt}{\centering \small Replace equation 2 with the sum of $\frac12$ times equation 3 plus equation 2;
@@ -193,12 +199,12 @@ $(-\frac32R_3+R_1\rightarrow R_1)$}
 \end{tabular}
 
 \begin{tabular}{ccc}
-$\begin{array}{ccccccc}
+$\begin{array}{*{7}{r}}
 b& & & & &=&15\\
  & &g& & &=&5\\
  & & & &r&=&10
 \end{array}$ &$\quad\quad$ &
-$\bmx{cccc}1&0&0&15\\0&1&0&5\\0&0&1&10\emx$ 
+$\bmx{*{4}{J}}1&0&0&15\\0&1&0&5\\0&0&1&10\emx$ 
  
 \end{tabular}
 \end{center}
@@ -208,7 +214,7 @@ The final matrix contains the same solution information as we have on the left i
 Let's practice this manipulation again.\\
 
 \example{ex_eq_mat}{Find a solution to the following system of linear equations by simultaneously manipulating the equations and the corresponding augmented matrices.
-$$\begin{array}{ccccccc}
+$$\begin{array}{*{7}{r}}
 x_1&+&x_2&+&x_3&=&0\\
 2x_1&+&2x_2&+&x_3&=&0\\
 -1x_1&+&x_2&-&2x_3&=&2
@@ -224,13 +230,13 @@ The given system and its corresponding augmented matrix are seen below.
 \parbox{120pt}{\centering \small Original system of equations} & & \parbox{120pt}{\centering \small Corresponding matrix}
 \\
 \\
-$\begin{array}{ccccccc}
+$\begin{array}{*{7}{r}}
 x_1&+&x_2&+&x_3&=&0\\
 2x_1&+&2x_2&+&x_3&=&0\\
 -1x_1&+&x_2&-&2x_3&=&2
 \end{array}$
 &$\quad \quad$&
-$\bmx{cccc}
+$\bmx{*{4}{J}}
 1&1&1&0\\ 2&2&1&0\\ -1&1&-2&2\\
 \emx$
 \end{tabular}
@@ -256,13 +262,13 @@ Replace row 3 with the sum of row 1 and row 3
 $(R_1+R_3\rightarrow R_3)$}
 \\
 \\
-$\begin{array}{ccccccc}
+$\begin{array}{*{7}{r}}
 x_1&+&x_2&+&x_3&=&0\\
    & &   & &-x_3&=&0\\
    & &2x_2&-&x_3&=&2
 \end{array}$
 &$\quad \quad$&
-$\bmx{cccc}
+$\bmx{*{4}{J}}
 1&1&1&0\\ 0&0&-1&0\\ 0&2&-1&2\\
 \emx$
 \\
@@ -286,13 +292,13 @@ Notice that the second equation no longer contains $x_2$. We'll exchange the ord
 $R_2\leftrightarrow R_3$}
 \\
 \\
-$\begin{array}{ccccccc}
+$\begin{array}{*{7}{r}}
 x_1&+&x_2&+&x_3&=&0\\
    & &2x_2&-&x_3&=&2\\
    & &   & &-x_3&=&0
 \end{array}$
 &$\quad \quad$&
-$\bmx{cccc}
+$\bmx{*{4}{J}}
 1&1&1&0\\ 0&2&-1&2\\ 0&0&-1&0\\
 \emx$
 \\
@@ -304,13 +310,13 @@ $\bmx{cccc}
 $(\frac12 R_2\rightarrow R_2)$}
 \\
 \\
-$\begin{array}{ccccccc}
+$\begin{array}{*{7}{r}}
 x_1&+&x_2&+&x_3&=&0\\
    & &x_2&-&\frac12x_3&=&1\\
    & &   & &-x_3&=&0
 \end{array}$
 &$\quad \quad$&
-$\bmx{cccc}
+$\bmx{*{4}{J}}
 1&1&1&0\\ 0&1&-\frac12&1\\ 0&0&-1&0\\
 \emx$
 \\
@@ -322,13 +328,13 @@ $\bmx{cccc}
 $(-1 R_3\rightarrow R_3)$}
 \\
 \\
-$\begin{array}{ccccccc}
+$\begin{array}{*{7}{r}}
 x_1&+&x_2&+&x_3&=&0\\
    & &x_2&-&\frac12x_3&=&1\\
    & &   & &x_3&=&0
 \end{array}$
 &$\quad \quad$&
-$\bmx{cccc}
+$\bmx{*{4}{J}}
 1&1&1&0\\ 0&1&-\frac12&1\\ 0&0&1&0\\
 \emx$
 \end{tabular}
@@ -353,13 +359,13 @@ Replace row 2 with the sum of $\frac12$ times row 3 plus row 2
 $(\frac12R_3+R_2\rightarrow R_2)$}
 \\
 \\
-$\begin{array}{ccccccc}
+$\begin{array}{*{7}{r}}
 x_1&+&x_2&&&=&0\\
    & &x_2&&&=&1\\
    & &   & &x_3&=&0
 \end{array}$
 &$\quad \quad$&
-$\bmx{cccc}
+$\bmx{*{4}{J}}
 1&1&0&0\\ 0&1&0&1\\ 0&0&1&0\\
 \emx$
 \end{tabular}
@@ -376,13 +382,13 @@ Notice how the second equation shows that $x_2 = 1$. All that remains to do is t
 $(-R_2+R_1\rightarrow R_1)$}
 \\
 \\
-$\begin{array}{ccccccc}
+$\begin{array}{*{7}{r}}
 x_1& &   &&&=&-1\\
    & &x_2&&&=&1\\
    & &   & &x_3&=&0
 \end{array}$
 &$\quad \quad$&
-$\bmx{cccc}
+$\bmx{*{4}{J}}
 1&0&0&-1\\ 0&1&0&1\\ 0&0&1&0\\
 \emx$
 \end{tabular}
@@ -390,6 +396,7 @@ $\bmx{cccc}
 
 Obviously the equations on the left tell us that $x_1 = -1$, $x_2 = 1$ and $x_3=0$, and notice how the matrix on the right tells us the same information. }\\
 
+\clearpage
 \printexercises{exercises/01_02_exercises}
 
 %Exercises:
