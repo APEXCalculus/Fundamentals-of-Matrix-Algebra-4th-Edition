@@ -192,7 +192,7 @@ The basic method of Gaussian elimination is this: create leading ones and then u
 \item		Put zeros above these leading 1s.
 \end{enumerate}}\index{Gaussian elimination}
 
-Let's practice some more.\\
+\noindent More examples follow.\\
 
 \example{ex_rref_2}{Use Gaussian elimination to put the matrix \tta\ into \rref, where  $$\tta = \bmx{JJJKJ}-2&-4&-2&-10&0\\2&4&1&9&-2\\3&6&1&13&-4\emx.$$}
 {We start by wanting to make the entry in the first column and first row a 1 (a leading 1). To do this we'll scale the first row by a factor of $-\frac12$. 
@@ -215,7 +215,7 @@ $\bmx{JJJJJ}1&2&1&5&0\\0&\fbox{0}&-1&-1&-2\\0&0&-2&-2&-4\emx$
 
 Our attention now shifts to the right one column and down one row to the position indicated by the box. We want to put a 1 in that position. Our only options are to either scale the current row or to interchange rows with a row below it. However, in this case neither of these options will accomplish our goal. Therefore, we shift our attention to the right one more column.
 
-We want to put a 1 where there is a --1. A simple scaling will accomplish this; once done, we will put a 0 underneath this leading one.
+We want to put a 1 where there is a $-1$. A simple scaling will accomplish this; once done, we will put a 0 underneath this leading one.
 
 \begin{center}\begin{tabular}{ x{70pt} p{16pt} l}
 $-R_2\rightarrow R_2$
@@ -287,82 +287,81 @@ $\bmx{JJJJ} 1&0&\frac{1}{3}&0\\0&1&\frac{1}{3}&0\\0&0&0&1\emx$
 \end{tabular}
 \end{center}
 }\\  %\eexset
-\clearpage
+%\clearpage
 
 The last matrix in the above example is in \rref. If one thinks of the original matrix as representing the augmented matrix of a system of linear equations, this final result is interesting. What does it mean to have a leading one in the last column? We'll figure this out in the next section.\\
 
-\example{ex_back_substitution}{Put the matrix \tta\ into \rref, where  $$\tta = \bmx{cccc}2&1&-1&4\\1&-1&2&12\\2&2&-1&9\\ \emx.$$}
+\example{ex_back_substitution}{Put the matrix \tta\ into \rref, where  $$\tta = \bmx{JJJK}2&1&-1&4\\1&-1&2&12\\2&2&-1&9\\ \emx.$$}
 {We'll again show the steps without explanation, although we will stop at the end of the forward steps and make a comment.
 
-\begin{center}\begin{tabular}{ccl}
-\parbox{70pt}{\centering\small $\frac12R_1\rightarrow R_1$}
-&$\quad \quad$&
-$\bmx{cccc}1&1/2&-1/2&2\\1&-1&2&12\\2&2&-1&9\\\emx$
+\begin{center}\begin{tabular}{x{70pt} p{16pt} l}
+$\frac12R_1\rightarrow R_1$
+&&
+$\bmx{JJJK}1&\frac{1}{2}&-\frac{1}{2}&2\\1&-1&2&12\\2&2&-1&9\\\emx$
 \end{tabular}\end{center}
 
-\begin{center}\begin{tabular}{ccl}
-\parbox{70pt}{\centering\small $-R_1+R_2\rightarrow R_2$\\
+\begin{center}\begin{tabular}{x{70pt} p{16pt} l}
+\small $-R_1+R_2\rightarrow R_2$\smallskip
 
-$-2R_1+R_3\rightarrow R_3$}
-&$\quad \quad$&
-$\bmx{cccc}1&1/2&-1/2&2\\0&-3/2&5/2&10\\0&1&0&5\\\emx$
+$-2R_1+R_3\rightarrow R_3$
+&&
+$\bmx{JJJK}1&\frac{1}{2}&-\frac{1}{2}&2\\0&-\frac{3}{2}&\frac{5}{2}&10\\0&1&0&5\\\emx$
 \end{tabular}\end{center}
 
-\begin{center}\begin{tabular}{ccl}
-\parbox{70pt}{\centering\small $-\frac23R_2\rightarrow R_2$\\}
-&$\quad \quad$&
-$\bmx{cccc}1&1/2&-1/2&2\\0&1&-5/3&-20/3\\0&1&0&5\\ \emx$
+\begin{center}\begin{tabular}{x{70pt} p{16pt} l}
+$-\frac23R_2\rightarrow R_2$
+&&
+$\bmx{JJJK}1&\frac{1}{2}&-\frac{1}{2}&2\\0&1&-\frac{5}{3}&-\frac{20}{3}\\0&1&0&5\\ \emx$
 \end{tabular}\end{center}
 
-\begin{center}\begin{tabular}{ccl}
-\parbox{70pt}{\centering\small $-R_2+R_3\rightarrow R_3$\\}
-&$\quad \quad$&
-$\bmx{cccc}1&1/2&-1/2&2\\0&1&-5/3&-20/3\\0&0&5/3&35/3\\ \emx$
+\begin{center}\begin{tabular}{x{70pt} p{16pt} l}
+$-R_2+R_3\rightarrow R_3$
+&&
+$\bmx{JJJK}1&\frac{1}{2}&-\frac{1}{2}&2\\0&1&-\frac{5}{3}&-\frac{20}{3}\\0&0&\frac{5}{3}&\frac{35}{3}\\ \emx$
 \end{tabular}\end{center}
 
-\begin{center}\begin{tabular}{ccl}
-\parbox{70pt}{\centering\small $\frac35R_3\rightarrow R_3$\\}
-&$\quad \quad$&
-$\bmx{cccc}1&1/2&-1/2&2\\0&1&-5/3&-20/3\\0&0&1&7\\ \emx$
+\begin{center}\begin{tabular}{x{70pt} p{16pt} l}
+$\frac35R_3\rightarrow R_3$
+&&
+$\bmx{JJJK}1&\frac{1}{2}&-\frac{1}{2}&2\\0&1&-\frac{5}{3}&-\frac{20}{3}\\0&0&1&7\\ \emx$
 \end{tabular}\end{center}
 
 %\drawexampleline{ex_back_substitution}
-
 Let's take a break here and think about the state of our linear system at this moment. Converting back to linear equations, we now know
 
-$$\begin{array}{rcl}
-x_1+1/2x_2-1/2x_3&=&2\\
-x_2-5/3x_3&=&-20/3\\
+$$\begin{array}{rcr}
+x_1+\frac{1}{2}x_2-\frac{1}{2}x_3&=&2\\
+x_2-\frac{5}{3}x_3&=&-\frac{20}{3}\\
 x_3&=&7\\
 \end{array}.$$
 
-Since we know that $x_3 = 7$, the second equation turns into $$x_2 - (5/3)(7) = -20/3,$$ telling us that $x_2 = 5$.
+Since $x_3 = 7$, the second equation becomes $$x_2 - \left(\frac{5}{3} \times 7\right) = -\frac{20}{3},$$ and we can determine that $x_2 = 5$.
 
-Finally, knowing values for $x_2$ and $x_3$ lets us substitute in the first equation and find $$x_1 +(1/2)(5)-(1/2)(7) = 2,$$ so $x_1 = 3$.\\
+Finally, knowing values for $x_2$ and $x_3$ lets us substitute in the first equation and find $$x_1 + \left(\frac{1}{2} \times 5 \right)-\left(\frac{1}{2} \times 7\right) = 2,$$ so $x_1 = 3$.\\
 
 This process of substituting known values back into other equations is called \textit{back substitution.} This process is essentially what happens when we perform the backward steps of Gaussian elimination. We make note of this below as we finish out finding the \rref\ of our matrix.
 
-\begin{center}\begin{tabular}{ccl}
-\parbox{100pt}{\centering\small $\frac53R_3+R_2\rightarrow R_2$\\
+\begin{center}\begin{tabular}{x{120pt} p{16pt} l}
+$\frac53R_3+R_2\rightarrow R_2$\smallskip
 
-(knowing $x_3=7$ allows us to find $x_2 = 5$)}
-&$\quad \quad$&
-$\bmx{cccc}1&1/2&-1/2&2\\0&1&0&5\\0&0&1&7\\ \emx$
+\small (knowing $x_3=7$ allows us to find $x_2 = 5$)
+&&
+$\bmx{JJJK}1&\frac{1}{2}&-\frac{1}{2}&2\\0&1&0&5\\0&0&1&7\\ \emx$
 \end{tabular}\end{center}
 
-\begin{center}\begin{tabular}{ccl}
-\parbox{120pt}{\centering\small $\frac12R_3+R_1\rightarrow R_1$\\
+\begin{center}\begin{tabular}{x{120pt} p{16pt} l}
+$\frac12R_3+R_1\rightarrow R_1$\smallskip
 
-$-\frac12R_2+R_1\rightarrow R_1$\\
+$-\frac12R_2+R_1\rightarrow R_1$\smallskip
 
-(knowing $x_2=5$ and $x_3=7$ allows us to find $x_1 = 3$)}
-&$\quad \quad$&
-$\bmx{cccc}1&0&0&3\\0&1&0&5\\0&0&1&7\\ \emx$
+\small (knowing $x_2=5$ and $x_3=7$ allows us to find $x_1 = 3$)
+&&
+$\bmx{JJJK}1&0&0&3\\0&1&0&5\\0&0&1&7\\ \emx$
 \end{tabular}\end{center}
 
-We did our operations slightly ``out of order'' in that we didn't put the zeros above our leading 1 in the third column in the same step, highlighting how back substitution works. }\\ %\eexset
+These operations are slightly ``out of order'' in that we didn't put the zeros above our leading 1 in the third column in the same step, highlighting how back substitution works. }\\ %\eexset
 
-In all of our practice, we've only encountered systems of linear equations with exactly one solution. Is this always going to be the case? Could we ever have systems with more than one solution? If so, how many solutions could there be? Could we have systems without a solution? These are some of the questions we'll address in the next section.\\
+In all of our practice, we've only encountered systems of linear equations with exactly one solution. Is this always going to be the case? That is, do some systems have more than one solution? If so, how many solutions can there be? What about systems with \emph{no} solution? These are some of the questions we'll address in the next section.\\
  
 
 %Exercises: Use G-J to find solutions to the following systems.\\
