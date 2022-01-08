@@ -225,7 +225,7 @@ The easiest way to find a particular solution is to pick values for the free var
 
 
 
-\example{ex_ex_un_4}{Give the solution to a linear system whose augmented matrix in \rref\ is $$\bmx{ccccc} 1&-1&0&2&4\\ 0&0&1&-3&7\\ 0&0&0&0&0\\ \emx$$ and give two particular solutions.}
+\example{ex_ex_un_4}{Give the solution to a linear system whose augmented matrix in \rref\ is $$\bmx{JJJJJ} 1&-1&0&2&4\\ 0&0&1&-3&7\\ 0&0&0&0&0\\ \emx$$ and give two particular solutions.}
 {We can essentially ignore the third row; it does not divulge any information about the solution.\footnote{Then why include it? Rows of zeros sometimes appear ``unexpectedly'' in matrices after they have been put in \rref. When this happens, we do learn \textit{something}; it means that at least one equation was a combination of some of the others.} 
 %We will learn more about this later.
  The first and second rows can be rewritten as the following equations: \begin{align*} x_1 - x_2 + 2x_4 &=4 \\ x_3 - 3x_4 &= 7. \\ \end{align*} Notice how the variables $x_1$ and $x_3$ correspond to the leading 1s of the given matrix. Therefore $x_1$ and $x_3$ are dependent variables; all other variables (in this case, $x_2$ and $x_4$) are free variables.
@@ -237,16 +237,16 @@ To find particular solutions, choose values for our free variables. There is no 
 %\enlargethispage{3\baselineskip}
 
 By setting $x_2 = 0 = x_4$, we have the solution $x_1 = 4$, $x_2 = 0$, $x_3 = 7$, $x_4 = 0$. By setting $x_2 = 1$ and $x_4 = -5$, we have the solution $x_1 = 15$, $x_2 = 1$, $x_3 = -8$, $x_4 = -5$. It is easier to read this when are variables are listed vertically, so we repeat these solutions:
+\medskip
 
+\renewcommand{\arraystretch}{1.1}
 \begin{center}
-\begin{minipage}{.4\linewidth}
-One particular solution is:
-\begin{align*} x_1 &= 4\\ x_2 &=0 \\ x_3 &= 7 \\ x_4 &= 0. \end{align*}
-\end{minipage}
-\begin{minipage}{.4\linewidth}
-Another particular solution is:
-\begin{align*} x_1 &= 15\\ x_2 &=1 \\ x_3 &= -8 \\ x_4 &= -5. \end{align*}
-\end{minipage}
+    \begin{tabular}{p{0.35\linewidth} p{24pt} p{0.35\linewidth}}
+        \centering One particular solution is: && Another particular solution is:\\\hline
+        \[\begin{array}{rcJ}x_1 &=& 4\\x_2 &=& 0\\ x_3 &=& 7\\x_4 &=& 0\end{array}\]
+        &&
+        \[\begin{array}{rcJ}x_1 &=& 15\\x_2 &=& 1\\ x_3 &=& -8\\x_4 &=& -5\end{array}\]\\\hline
+    \end{tabular}
 \end{center}
 }\\
 %\eexset
@@ -257,20 +257,20 @@ Another particular solution is:
 We see that $x_1$ and $x_2$ are our dependent variables, for they correspond to the leading 1s. Therefore, $x_3$ and $x_4$ are independent variables. This situation feels a little unusual,\footnote{What kind of situation would lead to a column of all zeros? To have such a column, the original matrix needed to have a column of all zeros, meaning that while we acknowledged the existence of a certain variable, we never actually used it in any equation. In practical terms, we could respond by removing the corresponding column from the matrix and just keep in mind that that variable is free. In very large systems, it might be hard to determine whether or not a variable is actually used and one would not worry about it.
 
 When we learn about \ev s and \el s, we will see that under certain circumstances this situation arises. In those cases we leave the variable in the system just to remind ourselves that it is there.\label{footnote:extra_zeros}} for $x_3$ doesn't appear in any of the equations above, but cannot overlook it; it is still a free variable since there is not a leading 1 that corresponds to it. We write our solution as:
-\begin{align*} x_1 &= 3-2x_4 \\ x_2 &=5-4x_4 \\ x_3 & \text{ is free} \\ x_4 &  \text{ is free}. \\ \end{align*}
+\begin{align*} x_1 &= 3-2x_4 \\ x_2 &=5-4x_4 \\ x_3 & \text{ is free} \\ x_4 &  \text{ is free}. \end{align*}
 
-To find two particular solutions, we pick values for our free variables. Again, there is no ``right'' way of doing this (in fact, there are $\ldots$ infinite ways of doing this) so we give only an example here.
+To find two particular solutions, we pick values for our free variables. Again, there is no ``right'' way of doing this (in fact, there are \emph{infinitely many} ways of doing this) so we give only an example here.
 
+\renewcommand{\arraystretch}{1.1}
 \begin{center}
-\begin{minipage}{.4\linewidth}
-One particular solution is:
-\begin{align*} x_1 &= 3\\ x_2 &=5 \\ x_3 &= 1000 \\ x_4 &= 0. \end{align*}
-\end{minipage}
-\begin{minipage}{.4\linewidth}
-Another particular solution is:
-\begin{align*} x_1 &= 3-2\pi\\ x_2 &=5-4\pi \\ x_3 &= e^2 \\ x_4 &= \pi. \end{align*}
-\end{minipage}
+    \begin{tabular}{p{0.35\linewidth} p{24pt} p{0.35\linewidth}}
+        \centering One particular solution is: && Another particular solution is:\\\hline
+        \[\begin{array}{rcM}x_1 &=& 3\\ x_2 &=& 5 \\ x_3 &=& 1000 \\ x_4 &=& 0\end{array}\]
+        &&
+        \[\begin{array}{rcM}x_1 &=& 3-2\pi\\ x_2 &=&5-4\pi\\ x_3 &=& e^2 \\ x_4 &=& \pi\end{array}\]\\\hline
+    \end{tabular}
 \end{center}
+
 (In the second particular solution we picked ``unusual'' values for $x_3$ and $x_4$ just to highlight the fact that we can.)}\\
 %\eexset
 
@@ -278,21 +278,20 @@ Another particular solution is:
 \enlargethispage{2\baselineskip}
 
 \example{ex_ex_un_6}{Find the solution to the linear system $$\begin{array}{ccccccc}x_1&+&x_2&+&x_3&=&5\\x_1&-&x_2&+&x_3&=&3\\ \end{array}$$ and give two particular solutions.}
-{The corresponding augmented matrix and its reduced row echelon form are given below.$$\bmx{cccc}1&1&1&5\\1&-1&1&3\\ \emx\quad \quad \overrightarrow{\text{rref}}\quad\quad \bmx{cccc}1&0&1&4\\0&1&0&1\\ \emx$$ Converting these two rows into equations, we have \begin{align*} x_1+x_3&=4\\x_2&=1\\ \end{align*} giving us the solution \begin{align*} x_1&= 4-x_3\\x_2&=1\\x_3 &\text{ is free}.\\ \end{align*}
+{The corresponding augmented matrix and its reduced row echelon form are given below.$$\bmx{cccc}1&1&1&5\\1&-1&1&3\\ \emx\quad \quad \overrightarrow{\text{rref}}\quad\quad \bmx{cccc}1&0&1&4\\0&1&0&1\\ \emx$$ Converting these two rows into equations, we have \begin{align*} x_1+x_3&=4\\x_2&=1\\ \end{align*} giving us the solution \begin{align*} x_1&= 4-x_3\\x_2&=1\\x_3 &\text{ is free}.\end{align*}
 
 Once again, we get a bit of an ``unusual'' solution; while $x_2$ is a dependent variable, it does not depend on any free variable; instead, it is always 1. (We can think of it as depending on the value of 1.) By picking two values for $x_3$, we get two particular solutions.
 %We can check our work by finding a particular solution and plugging it into our original equations. For instance, set $x_3 = 0$. This makes $x_1 =4$, and this satisfies both of the original equations. 
+\renewcommand{\arraystretch}{1.1}
 \begin{center}
-\begin{minipage}{.4\linewidth}
-One particular solution is:
-\begin{align*} x_1 &= 4\\ x_2 &=1 \\ x_3 &= 0 . \end{align*}
-\end{minipage}
-\begin{minipage}{.4\linewidth}
-Another particular solution is:
-\begin{align*} x_1 &= 3\\ x_2 &=1 \\ x_3 &= 1 . \end{align*}
-\end{minipage}
+    \begin{tabular}{p{0.35\linewidth} p{24pt} p{0.35\linewidth}}
+        \centering One particular solution is: && Another particular solution is:\\\hline
+        \[\begin{array}{rcM}x_1 &=& 4\\ x_2 &=&1 \\ x_3 &=& 0\end{array}\]
+        &&
+        \[\begin{array}{rcM}x_1 &=& 3\\ x_2 &=&1 \\ x_3 &=& 1\end{array}\]\\\hline
+    \end{tabular}
 \end{center}
- }\\ %\eexset
+}\\ %\eexset
 %Our general solution may strike us as a bit odd; while we do have infinite solutions, in each one $x_2=1$. There is nothing wrong with this, though; it just may surprise us. \eexset
 
 The constants and coefficients of a matrix work together to determine whether a given system of linear equations has one, infinite, or no solution. The concept will be fleshed out more in later chapters, but in short, the coefficients determine whether a matrix will have exactly one solution or not. In the ``or not'' case, the constants determine whether or not infinite solutions or no solution exists. (So if a given linear system has exactly one solution, it will always have exactly one solution even if the constants are changed.) Let's look at an example to get an idea of how the values of constants and coefficients work together to determine the solution type.\\
