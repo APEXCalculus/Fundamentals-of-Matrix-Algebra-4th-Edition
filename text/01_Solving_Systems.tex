@@ -3,7 +3,7 @@
 \asyouread{
 \item How do most problems appear ``in the real world?''
 \item The unknowns in a problem are also called what?
-\item How many points are needed to determine the coefficients of a 5$^\text{th}$ degree polynomial?
+\item How many points are needed to determine the coefficients of a 5\textsuperscript{th} degree polynomial?
 }
 
 We've started this chapter by addressing the issue of finding the solution to a system of linear equations. In subsequent sections, we  defined matrices to store linear equation information; we described how we can manipulate matrices without changing the solutions; we described how to efficiently manipulate matrices so that a working solution can be easily found.
@@ -34,15 +34,16 @@ We have four equations; altogether, they are \begin{align*} b+g+r+y&= 100\\ 2b&=
 
 We want to write these equations in a standard way, with all the unknowns on the left and the constants on the right. Let us also write them so that the variables appear in the same order in each equation (we'll use alphabetical order to make it simple). We now have \begin{align*} b+g+r+y&=100\\2b-y&=0\\b-r&=10\\-b-g+r+y&=0\\ \end{align*}
 
-To find the solution, let's form the appropriate augmented matrix and put it into \rref. We do so here, without showing the steps.$$\bmx{ccccc}1&1&1&1&100\\2&0&0&-1&0\\1&0&-1&0&10\\-1&-1&1&1&0\\ \emx \quad\quad \overrightarrow{\text{rref}} \quad\quad \bmx{ccccc} 1&0&0&0&20\\0&1&0&0&30\\0&0&1&0&10\\0&0&0&1&40\\ \emx$$
+To find the solution, let's form the appropriate augmented matrix and put it into \rref. We do so here, without showing the steps.
+\[\bmx{JJJJJ}1&1&1&1&100\\2&0&0&-1&0\\1&0&-1&0&10\\-1&-1&1&1&0\\ \emx \quad\quad \overrightarrow{\text{rref}} \quad\quad \bmx{JJJJJ} 1&0&0&0&20\\0&1&0&0&30\\0&0&1&0&10\\0&0&0&1&40\\ \emx\]
 
 We interpret from the \rref\ of the matrix that we have 20 blue, 30 green, 10 red and 40 yellow marbles. }\\ %\eexset
 
 Even if you had a bit of difficulty with the previous example, in reality, this type of problem is pretty simple. The unknowns were easy to identify, the equations were pretty straightforward to write (maybe a bit tricky for some), and only the necessary information was given.
 
-Most problems that we face in the world do not approach us in this way; most problems do not approach us in the form of ``Here is an equation. Solve it.'' Rather, most problems come in the form of: \begin{quote}Here is a problem. I want the solution. To help, here is lots of information. It may be just enough; it may be too much; it may not be enough. You figure out what you need; just give me the solution.\end{quote}
+Most problems that we face in the world do not approach us in this way; most problems do not approach us in the form of ``Here is an equation. Solve it.'' Rather, most problems come in the form of: \begin{quote}Here is a problem: I want the solution. To help, here is lots of information. It may be just enough information, too much, or not enough. You figure out what you need; \emph{just give me the solution.}\end{quote}
 
-Faced with this type of problem, how do we proceed? Like much of what we've done in the past, there isn't just one ``right'' way. However, there are a few steps that can guide us. You don't have to follow these steps, ``step by step,'' but if you find that you are having difficulty solving a problem, working through these steps may help. (Note: while the principles outlined here will help one solve any type of problem, these steps are written specifically for solving problems that involve only linear equations.)
+Faced with this type of problem, how do we proceed? Like much of what we've done previously, there is no one ``right'' way. However, there are a few steps that can guide us. You don't have to ruthlessly and precisely follow these steps, but if you find that you are having difficulty solving a problem, working through these steps may help. (Note: while the principles outlined here will help one solve any type of problem, these steps are written specifically for solving problems that involve only linear equations.)
 
 \keyidea{idea:problem_solving}{\textbf{Mathematical Problem Solving} \index{problem solving}
 \begin{enumerate}
@@ -78,15 +79,15 @@ $$\bmx{cccc}1&1&0&105\\0&1&1&103\\1&0&1&88\\ \emx \quad \quad \overrightarrow{\t
 We can now read off our solution. The first section has 45 seats, the second has 60 seats, and the third has 43 seats.}\\ %\eexset
 
 
-\example{ex_application_2}{A lady takes a 2-mile motorized boat trip down the Highwater River, knowing the trip will take 30 minutes. She asks the boat pilot ``How fast does this river flow?'' He replies ``I have no idea, lady. I just drive the boat.'' 
+\example{ex_application_2}{A lady takes a 2-mile motorized boat trip down the Highwater River, knowing the trip will take 30 minutes. She asks the boat pilot ``How fast does this river flow?'' He replies ``I have no idea, lady. I just drive the boat.''\medskip 
 
-She thinks for a moment, then asks ``How long does the return trip take?'' He replies ``The same; half an hour.'' She follows up with the statement, ``Since both legs take the same time, you must not drive the boat at the same speed.''
+\noindent She thinks for a moment, then asks ``How long does the return trip take?'' He replies ``The same; half an hour.'' She follows up with the statement, ``Since both legs take the same time, you must not drive the boat at the same speed.''\medskip
 
-``Naw,'' the pilot said. ``While I really don't know exactly how fast I go, I do know that since we don't carry any tourists, I drive the boat twice as fast.''
+\noindent ``Naw,'' the pilot said. ``While I really don't know exactly how fast I go, I do know that since we don't carry any tourists, I drive the boat twice as fast.''\medskip
 
-The lady walks away satisfied; she knows how fast the river flows. 
+\noindent The lady walks away satisfied; she knows how fast the river flows. \medskip
 
-(How fast \textit{does} it flow?)}
+\noindent (So how fast \textit{does} it flow?)}
 {This problem forces us to think about what information is given and how to use it to find what we want to know. In fact, to find the solution, we'll find out extra information that we weren't asked for!
 
 %\enlargethispage{2\baselineskip}
@@ -107,15 +108,19 @@ When the boat returns going against the current, its overall speed is the rate o
 
 %\begin{align*} 0.5b + 0.5r &=2\\ 1b-0.5r&= 2\\ \end{align*}
 
-The corresponding augmented matrix is $$\bmx{ccc} 1 & 1 & 4\\ 2&-1&4\\ \emx.$$ Note that we decided to let the first column hold the coefficients of $b$.
+The corresponding augmented matrix is $$\bmx{rJr} 1 & 1 & 4\\ 2&-1&4\\ \emx.$$ Note that we decided to let the first column hold the coefficients of $b$.
 
-Putting this matrix in \rref\ gives us: $$\bmx{ccc} 1 & 1 & 4\\ 2&-1&4\\ \emx\quad\quad\overrightarrow{\text{rref}}\quad\quad\bmx{ccc}1&0&8/3\\0&1&4/3\\ \emx.$$
+\renewcommand{\arraystretch}{1.3}
+Putting this matrix in \rref\ gives us: $$\bmx{JJJ} 1 & 1 & 4\\ 2&-1&4\\ \emx
+\quad\quad\overrightarrow{\text{rref}}\quad\quad
+\bmx{JJJ}1&0&\frac{8}{3}\\0&1&\frac{4}{3}\\ \emx.$$
+\renewcommand{\arraystretch}{1.0}
 
-We finish by interpreting this solution: the speed of the boat (going downstream) is 8/3 mph, or $2.\overline{6}$ mph, and the speed of the river is 4/3 mph, or $1.\overline{3}$ mph. All we really wanted to know was the speed of the river, at about 1.3 mph.}\\ %\eexset
+We finish by interpreting this solution: the speed of the boat (going downstream) is $\frac{8}{3}$ mph, or $2.\overline{6}$ mph, and the speed of the river is $\frac{4}{3}$ mph, or $1.\overline{3}$ mph. All we really wanted to know was the speed of the river, at about 1.3 mph.}\\ %\eexset
 
 
 \example{ex_polynomial_1}{Find the equation of the quadratic function that goes through the points $(-1,6)$, $(1,2)$ and $(2,3)$.}
-{This may not seem like a ``linear'' problem since we are talking about a quadratic function, but closer examination will show that it really is.
+{This may not seem like a ``linear'' problem since we are talking about a quadratic function, but closer examination will show that it really is!
 
 We normally write quadratic functions as $y=ax^2+bx+c$ where $a$, $b$ and $c$ are the coefficients; in this case, they are our unknowns. We have three points; consider the point $(-1,6)$. This tells us directly that if $x=-1$, then $y=6$. Therefore we know that $6=a(-1)^2+b(-1)+c$. Writing this in a more standard form, we have the linear equation $$a - b+c=6.$$
 
@@ -123,7 +128,9 @@ The second point tells us that $a(1)^2+b(1)+c = 2$, which we can simplify as $a+
 
 Again, to solve our system, we find the \rref\ of the corresponding augmented matrix. We don't show the steps here, just the final result.
 
-$$\bmx{cccc}1&-1&1&6\\1&1&1&2\\4&2&1&3\\ \emx \quad\quad \overrightarrow{\text{ rref }}\quad\quad \bmx{cccc}1&0&0&1\\0&1&0&-2\\0&0&1&3\\ \emx$$
+$$\bmx{JJJJ}1&-1&1&6\\1&1&1&2\\4&2&1&3\\ \emx
+\quad\quad \overrightarrow{\text{ rref }}\quad\quad
+\bmx{JJJJ}1&0&0&1\\0&1&0&-2\\0&0&1&3\\ \emx$$
 
 This tells us that $a=1$, $b=-2$ and $c=3$, giving us the quadratic function $y=x^2-2x+3$.}\\ % \eexset
 
@@ -142,9 +149,17 @@ Of course, we can do the same type of thing to find polynomials that go through 
 {Let's name our unknowns $x$, $y$ and $z$ for our ones, fives and tens, respectively (it is tempting to call them $o$, $f$ and $t$, but $o$ looks too much like 0). We know that there are a total of 32 bills, so we have the equation $$x+y+z = 32.$$ We also know that we have \$100, so we have the equation $$x+5y+10z = 100.$$ We have three unknowns but only two equations, so we know that we cannot expect a unique solution. Let's try to solve this system anyway and see what we get.
 
 Putting the system into a matrix and then finding the \rref, we have 
-$$\bmx{cccc}1&1&1&32\\ 1&5&10&100\\ \emx \qquad \overrightarrow{\text{rref}}\qquad \bmx{cccc}1&0&-\frac54&15\\0&1&\frac94&17\\ \emx.$$
+\renewcommand{\arraystretch}{1.3}
+$$\bmx{JJJJ}1&1&1&32\\ 1&5&10&100\\ \emx
+\qquad \overrightarrow{\text{rref}}\qquad
+\bmx{JJKJ}1&0&-\frac54&15\\0&1&\frac94&17\\ \emx.$$
 
-Reading from our reduced matrix, we have the infinite solution set \begin{align*}x &=15+\frac54z\\ y&=17 - \frac94z\\ z & \text{ is free.}\end{align*}
+Reading from our reduced matrix, we have the infinite solution set
+\[\begin{array}{rcl}
+x &=&15+\frac54z\\ y&=&17 - \frac94z\\ z && \text{is free.}
+\end{array}
+\]
+\renewcommand{\arraystretch}{1.0}
 
 While we do have infinite solutions, most of these solutions really don't make sense in the context of this problem. (Setting $z = \frac12$ doesn't make sense, for having half a ten dollar bill doesn't give us \$5. Likewise, having $z = 8$ doesn't make sense, for then we'd have ``$-1$'' \$5 bills.) So we must make sure that our choice of $z$ doesn't give us fractions of bills or negative amounts of bills. 
 
@@ -160,7 +175,10 @@ Now we address the issue of writing equations with these variables using the giv
 %\drawexampleline{ex_football}
 %\drawexampleline
 
-To solve our problem, we put these equations into a matrix and put the matrix into \rref. Doing so, we find $$\bmx{ccccc}1&1&1&1&7\\ 6&1&2&3&24\\1&-1&-1&0&0\\ \emx \quad\quad\overrightarrow{\text{rref}}\quad\quad \bmx{ccccc} 1&0&0&0.5&3.5\\0&1&0&1&4\\ 0&0&1&-0.5&-0.5\\ \emx.$$
+To solve our problem, we put these equations into a matrix and put the matrix into \rref. Doing so, we find
+\[\bmx{JJJJJ}1&1&1&1&7\\ 6&1&2&3&24\\1&-1&-1&0&0\\ \emx
+\quad\quad\overrightarrow{\text{rref}}\quad\quad
+\bmx{JJJMM} 1&0&0&0.5&3.5\\0&1&0&1&4\\ 0&0&1&-0.5&-0.5\\ \emx.\]
 
 Therefore, we know that \begin{align*} t &=3.5-0.5f\\ x&=4-f\\ w&=-0.5+0.5f. \\ \end{align*} We recognize that this means there are ``infinite solutions,'' but of course most of these will not make sense in the context of a real football game. We must apply some logic to make sense of the situation.
 
