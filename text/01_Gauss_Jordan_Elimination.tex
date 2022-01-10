@@ -9,7 +9,7 @@
 \item Using the ``forward'' and ``backward'' steps of Gaussian elimination creates lots of \underline{\hskip .5in} making computations easier.
 }
 
-In our examples thus far, we have essentially used just three types of manipulations in order to find solutions to our systems of equations. These three manipulations are:
+In the examples thus far, we have essentially used just three types of manipulations to find solutions to our systems of equations. These three manipulations are:
 
 \begin{enumerate}
 \item		Add a scalar multiple of one equation to a second equation, and replace the second equation with that sum
@@ -19,7 +19,7 @@ In our examples thus far, we have essentially used just three types of manipulat
 
 We saw earlier how we could write all the information of a system of equations in a matrix, so it makes sense that we can perform similar operations on matrices (as we have done before). Again, simply replace the word ``equation'' above with the word ``row.'' 
 
-We didn't justify our ability to  manipulate our equations in the above three ways; it seems rather obvious that we should be able to do that. In that sense, these operations are ``elementary.'' These operations are \textit{elementary} in another sense; they are \textit{fundamental} -- they form the basis for much of what we will do in matrix algebra. Since these operations are so important, we list them again here in the context of matrices.
+We didn't justify our ability to manipulate the equations in the above three ways; it seems rather obvious that we should be able to do that. In that sense, these operations are ``elementary.'' These operations are \textit{elementary} in another sense; they are \textit{fundamental} -- they form the basis for much of what we will do in matrix algebra. Since these operations are so important, we list them again here in the context of matrices.
 
 \keyidea{idea:elementary_row_operations}{\textbf{Elementary Row Operations}
 \begin{enumerate}
@@ -29,15 +29,15 @@ We didn't justify our ability to  manipulate our equations in the above three wa
 \end{enumerate}
 }\index{elementary row operations}
 
-Given any system of linear equations, we can find a solution (if one exists) by using these three row operations. Elementary row operations give us a new linear system, but the solution to the new system is the same as the old. We can use these operations as much as we want and not change the solution. This brings to mind two good questions:
+Given any system of linear equations, we can find a solution (if one exists) by using these three row operations. Elementary row operations give us a new linear system, but the solution to the system is no different. We can use these operations as much as we want and not change the solution. This brings to mind two good questions:
 \begin{enumerate}
 \item		Since we can use these operations as much as we want, how do we know when to stop? (Where are we supposed to ``go'' with these operations?)
 \item		Is there an efficient way of using these operations? (How do we get ``there'' the fastest?)
 \end{enumerate}
 
-We'll answer the first question first. Most of the time\footnote{unless one prefers obfuscation to clarification} we will want to take our original matrix and, using the elementary row operations, put it into something called \textit{reduced row echelon form}.\footnote{Some texts use the term \textit{reduced echelon form} instead.} This is our ``destination,'' for this form allows us to readily identify whether or not a solution exists, and in the case that it does, what that solution is. 
+Most of the time\footnote{unless one prefers obfuscation to clarification} we will want to take our original matrix and, using the elementary row operations, put it into something called \textit{reduced row echelon form}.\footnote{Some texts use the term \textit{reduced echelon form} instead.} This form is our ``destination.'' It allows us to readily identify if a solution exists, and in the case that it does, what that solution is. 
 
-In the previous section, when we manipulated matrices to find solutions, we were unwittingly putting the matrix into \rref. However, not all solutions come in such a simple manner as we've seen so far. Putting a matrix into \rref\ helps us identify all types of solutions. We'll explore the topic of understanding what the reduced row echelon form of a matrix tells us in the following sections; in this section we focus on finding it.
+In the previous section, when we manipulated matrices to find solutions, we were unwittingly putting the matrix into \rref. However, not all solutions are so easily reached. Putting a matrix into \rref\ helps us identify all types of solutions. We'll explore the topic of understanding what the reduced row echelon form of a matrix tells us in the following sections; in this section we focus on finding it.
 
 \index{reduced echelon form}
 \definition{def:rref}{{\bf Reduced Row Echelon Form}\\
@@ -73,10 +73,9 @@ The matrix in e) is not in reduced row echelon form since the row of all zeros i
 
 We end this example with a preview of what we'll learn in the future. Consider the matrix in b). If this matrix came from the augmented matrix of a system of linear equations, then we can readily recognize that the solution of the system is $x_1=1$ and $x_2=2$. Again, in previous examples, when we found the solution to a linear system, we were unwittingly putting our matrices into reduced row echelon form.} \\ % \eexset
 
+This section discussed how we can manipulate the entries in a matrix with elementary row operations. This led to two questions, ``Where do we go?'' and ``How do we get there quickly?'' We've just answered the first question: most of the time the objective is reduced row echelon form. 
 
-We began this section discussing how we can manipulate the entries in a matrix with elementary row operations. This led to two questions, ``Where do we go?'' and ``How do we get there quickly?'' We've just answered the first question: most of the time we are ``going to'' reduced row echelon form. We now address the second question.
-
-There is no one ``right'' way of using these operations to transform a matrix into reduced row echelon form. However, there is a general technique that works very well in that it is very efficient (so we don't waste time on unnecessary steps). This technique is called 
+As for the second question, there is no one ``right'' way of using these operations to transform a matrix into reduced row echelon form. However, there is a general technique that works very well. It is very efficient, so we don't waste time on unnecessary steps. This technique is called 
 %Edited out due to confusion about the "true" meaning of Gauss Jordan
 %\textit{Gauss-Jordan Elimination}. It is named in honor of the mathematicians Karl Friedrich Gauss and Wilhelm Jordan.
 \textit{Gaussian elimination}.\index{Gaussian elimination} It is named in honor of the great mathematician Karl Friedrich Gauss.
@@ -84,66 +83,66 @@ There is no one ``right'' way of using these operations to transform a matrix in
 While this technique isn't very difficult to use, it is one of those things that is easier understood by watching it being used than explained as a series of steps. With this in mind, we will go through one more example highlighting important steps and then we'll explain the procedure in detail.\\
 
 \example{ex_gaussian_elimination}{Put the augmented matrix of the following system of linear equations into reduced row echelon form.
-$$\begin{array}{ccccccc}
+$$\begin{array}{MQKQKQK}
 -3x_1&-&3x_2&+&9x_3&=&12\\
 2x_1&+&2x_2&-&4x_3&=&-2\\
 &&-2x_2&-&4x_3&=&-8
 \end{array}$$
 }
-{We start by converting the linear system into an augmented matrix.
+{Start by converting the linear system into an augmented matrix.
 
-$$\bmx{cccc}\fbox{$-3$}&-3&9&12\\ 2&2&-4&-2\\0&-2&-4&-8\emx$$
+$$\bmx{KJJJ}\fbox{$-3$}&-3&9&12\\ 2&2&-4&-2\\0&-2&-4&-8\emx$$
 
-Our next step is to change the entry in the box to a 1. To do this, let's multiply row 1 by $-\frac13$.
+Our next step is to change the entry in the box to a 1: multiply row 1 by $-\frac13$.
 
-\begin{center}\begin{tabular}{ccc}
-\parbox{70pt}{\centering\small $-\frac13R_1\rightarrow R_1$}
-&$\quad \quad$&
-$\bmx{cccc}1&1&-3&-4\\ 2&2&-4&-2\\0&-2&-4&-8\emx$
+\begin{center}\begin{tabular}{ x{70pt} p{16pt} l}
+$-\frac13R_1\rightarrow R_1$
+&&
+$\bmx{JJJJ}1&1&-3&-4\\ 2&2&-4&-2\\0&-2&-4&-8\emx$
 \end{tabular}\end{center}
 
 We have now created a \textit{leading 1}; that is, the first entry in the first row is a 1. Our next step is to put zeros under this 1. To do this, we'll use the elementary row operation given below.
 
-\begin{center}\begin{tabular}{ccc}
-\parbox{70pt}{\centering\small $-2R_1+R_2\rightarrow R_2$}
-&$\quad \quad$&
-$\bmx{cccc}1&1&-3&-4\\ 0&\fbox{0}&2&6\\0&-2&-4&-8\emx$
+\begin{center}\begin{tabular}{ x{70pt} p{16pt} l}
+$-2R_1+R_2\rightarrow R_2$
+&&
+$\bmx{JJJJ}1&1&-3&-4\\ 0&\fbox{0}&2&6\\0&-2&-4&-8\emx$
 \end{tabular}\end{center}
 
 Once this is accomplished, we shift our focus from the leading one down one row, and to the right one column, to the position that is boxed. We again want to put a 1 in this position. We can use any elementary row operations, but we need to restrict ourselves to using only the second row and any rows below it. Probably the simplest thing we can do is interchange rows 2 and 3, and then scale the new second row so that there is a 1 in the desired position.
 
-\begin{center}\begin{tabular}{ccl}
-\parbox{70pt}{\centering\small $R_2\leftrightarrow R_3$}
-&$\quad \quad$&
-$\bmx{cccc}1&1&-3&-4\\0&\fbox{$-2$}&-4&-8 \\0&0&2&6\emx$\\
+\begin{center}\begin{tabular}{ x{70pt} p{16pt} l}
+$R_2\leftrightarrow R_3$
+&&
+$\bmx{JJJJ}1&1&-3&-4\\0&\fbox{$-2$}&-4&-8 \\0&0&2&6\emx$\\
 \\
-\parbox{70pt}{\centering\small $-\frac12R_2\rightarrow R_2$}
-&$\quad \quad$&
-$\bmx{cccc}1&1&-3&-4\\0&1&2&4 \\0&0&\fbox{2}&6\emx$
+$-\frac12R_2\rightarrow R_2$
+&&
+$\bmx{JJJJ}1&1&-3&-4\\0&1&2&4 \\0&0&\fbox{2}&6\emx$
 \end{tabular}\end{center}
 
 We have now created another leading 1, this time in the second row. Our next desire is to put zeros  underneath it, but this has already been accomplished by our previous steps. Therefore we again shift our attention to the right one column and down one row, to the next position put in the box. We want that to be a 1. A simple scaling will accomplish this.
 
-\begin{center}\begin{tabular}{ccl}
-\parbox{70pt}{\centering\small $\frac12R_3\rightarrow R_3$}
-&$\quad \quad$&
-$\bmx{cccc}1&1&-3&-4\\0&1&2&4 \\0&0&1&3\emx$
+\begin{center}\begin{tabular}{ x{70pt} p{16pt} l}
+$\frac12R_3\rightarrow R_3$
+&&
+$\bmx{JJJJ}1&1&-3&-4\\0&1&2&4 \\0&0&1&3\emx$
 \end{tabular}\end{center}
 
 %\enlargethispage{3\baselineskip}
 
 This ends what we will refer to as the \textit{forward steps}. Our next task is to use the elementary row operations and go back and put zeros above our leading 1s. This is referred to as the \textit{backward steps}. These steps are given below.
 
-\begin{center}\begin{tabular}{ccl}
-\parbox{70pt}{\centering\small $3R_3+R_1\rightarrow R_1$\\
+\begin{center}\begin{tabular}{ x{70pt} p{16pt} l}
+$3R_3+R_1\rightarrow R_1$\smallskip
 
-$-2R_3+R_2\rightarrow R_2$}
-&$\quad \quad$&
-$\bmx{cccc}1&1&0&5\\0&1&0&-2 \\0&0&1&3\emx$\\
+$-2R_3+R_2\rightarrow R_2$
+&&
+$\bmx{JJJJ}1&1&0&5\\0&1&0&-2 \\0&0&1&3\emx$\\
 \\
-\parbox{70pt}{\centering\small$-R_2+R_1\rightarrow R_1$}
-&$\quad \quad$&
-$\bmx{cccc}1&0&0&7\\0&1&0&-2 \\0&0&1&3\emx$
+$-R_2+R_1\rightarrow R_1$
+&&
+$\bmx{JJJJ}1&0&0&7\\0&1&0&-2 \\0&0&1&3\emx$
 \end{tabular}\end{center}
 
 It is now easy to read off the solution as $x_1 = 7$, $x_2 = -2$ and $x_3 = 3$.}\\ % \eexset
@@ -193,51 +192,51 @@ The basic method of Gaussian elimination is this: create leading ones and then u
 \item		Put zeros above these leading 1s.
 \end{enumerate}}\index{Gaussian elimination}
 
-Let's practice some more.\\
+\noindent More examples follow.\\
 
-\example{ex_rref_2}{Use Gaussian elimination to put the matrix \tta\ into \rref, where  $$\tta = \bmx{ccccc}-2&-4&-2&-10&0\\2&4&1&9&-2\\3&6&1&13&-4\emx.$$}
+\example{ex_rref_2}{Use Gaussian elimination to put the matrix \tta\ into \rref, where  $$\tta = \bmx{JJJKJ}-2&-4&-2&-10&0\\2&4&1&9&-2\\3&6&1&13&-4\emx.$$}
 {We start by wanting to make the entry in the first column and first row a 1 (a leading 1). To do this we'll scale the first row by a factor of $-\frac12$. 
 
-\begin{center}\begin{tabular}{ccl}
-\parbox{70pt}{\centering\small $-\frac12R_1\rightarrow R_1$}
-&$\quad \quad$&
-$\bmx{ccccc}1&2&1&5&0\\2&4&1&9&-2\\3&6&1&13&-4\emx$
+\begin{center}\begin{tabular}{ x{70pt} p{16pt} l}
+$-\frac12R_1\rightarrow R_1$
+&&
+$\bmx{JJJJJ}1&2&1&5&0\\2&4&1&9&-2\\3&6&1&13&-4\emx$
 \end{tabular}\end{center}
 
 Next we need to put zeros in the column below this newly formed leading 1. 
 
-\begin{center}\begin{tabular}{ccl}
-\parbox{70pt}{\centering\small $-2R_1+R_2\rightarrow R_2$\\
+\begin{center}\begin{tabular}{ x{70pt} p{16pt} l}
+$-2R_1+R_2\rightarrow R_2$\smallskip
 
-$-3R_1+R_3\rightarrow R_3$}
-&$\quad \quad$&
-$\bmx{ccccc}1&2&1&5&0\\0&\fbox{0}&-1&-1&-2\\0&0&-2&-2&-4\emx$
+$-3R_1+R_3\rightarrow R_3$
+&&
+$\bmx{JJJJJ}1&2&1&5&0\\0&\fbox{0}&-1&-1&-2\\0&0&-2&-2&-4\emx$
 \end{tabular}\end{center}
 
 Our attention now shifts to the right one column and down one row to the position indicated by the box. We want to put a 1 in that position. Our only options are to either scale the current row or to interchange rows with a row below it. However, in this case neither of these options will accomplish our goal. Therefore, we shift our attention to the right one more column.
 
-We want to put a 1 where there is a --1. A simple scaling will accomplish this; once done, we will put a 0 underneath this leading one.
+We want to put a 1 where there is a $-1$. A simple scaling will accomplish this; once done, we will put a 0 underneath this leading one.
 
-\begin{center}\begin{tabular}{ccl}
-\parbox{70pt}{\centering\small $-R_2\rightarrow R_2$}
-&$\quad \quad$&
-$\bmx{ccccc}1&2&1&5&0\\0&0&1&1&2\\0&0&-2&-2&-4\emx$
+\begin{center}\begin{tabular}{ x{70pt} p{16pt} l}
+$-R_2\rightarrow R_2$
+&&
+$\bmx{JJJJJ}1&2&1&5&0\\0&0&1&1&2\\0&0&-2&-2&-4\emx$
 \end{tabular}\end{center}
 
-\begin{center}\begin{tabular}{ccl}
-\parbox{70pt}{\centering\small $2R_2+R_3\rightarrow R_3$}
-&$\quad \quad$&
-$\bmx{ccccc}1&2&1&5&0\\0&0&1&1&2\\0&0&0&\fbox{0}&0\emx$
+\begin{center}\begin{tabular}{ x{70pt} p{16pt} l}
+$2R_2+R_3\rightarrow R_3$
+&&
+$\bmx{JJJJJ}1&2&1&5&0\\0&0&1&1&2\\0&0&0&\fbox{0}&0\emx$
 \end{tabular}\end{center}
 
 Our attention now shifts over one more column and down one row to the position indicated by the box; we wish to make this a 1. Of course, there is no way to do this, so we are done with the forward steps.
 
 Our next goal is to put a 0 above each of the leading 1s (in this case there is only one leading 1 to deal with). 
 
-\begin{center}\begin{tabular}{ccl}
-\parbox{70pt}{\centering\small $-R_2+R_1\rightarrow R_1$}
-&$\quad \quad$&
-$\bmx{ccccc}1&2&0&4&-2\\0&0&1&1&2\\0&0&0&0&0\emx$
+\begin{center}\begin{tabular}{ x{70pt} p{16pt} l}
+$-R_2+R_1\rightarrow R_1$
+&&
+$\bmx{JJJJJ}1&2&0&4&-2\\0&0&1&1&2\\0&0&0&0&0\emx$
 \end{tabular}\end{center}
 
 This final matrix is in \rref.}\\ % \eexset
@@ -247,123 +246,122 @@ This final matrix is in \rref.}\\ % \eexset
 \example{ex_rref_3}{Put the matrix $$\bmx{cccc} 1&2&1&3\\2&1&1&1\\3&3&2&1\emx$$ into \rref.}
 {Here we will show all steps without explaining each one.
 
-\begin{center}\begin{tabular}{ccl}
-\parbox{70pt}{\centering\small $-2R_1+R_2\rightarrow R_2$\\
+\begin{center}\begin{tabular}{ x{70pt} p{16pt} l}
+$-2R_1+R_2\rightarrow R_2$\smallskip
 
-$-3R_1+R_3\rightarrow R_3$}
-&$\quad \quad$&
-$\bmx{cccc} 1&2&1&3\\0&-3&-1&-5\\0&-3&-1&-8\emx$
+$-3R_1+R_3\rightarrow R_3$
+&&
+$\bmx{JJJJ} 1&2&1&3\\0&-3&-1&-5\\0&-3&-1&-8\emx$
 \end{tabular}\end{center}
 
-\begin{center}\begin{tabular}{ccl}
-\parbox{70pt}{\centering\small $-\frac13R_2\rightarrow R_2$}
-&$\quad \quad$&
-$\bmx{cccc} 1&2&1&3\\0&1&1/3&5/3\\0&-3&-1&-8\emx$
+\begin{center}\begin{tabular}{x{70pt} p{16pt} l}
+$-\frac13R_2\rightarrow R_2$
+&&
+$\bmx{JJJJ} 1&2&1&3\\0&1&\frac{1}{3}&\frac{5}{3}\\0&-3&-1&-8\emx$
 \end{tabular}\end{center}
 
-\begin{center}\begin{tabular}{ccl}
-\parbox{70pt}{\centering\small $3R_2+R_3\rightarrow R_3$}
-&$\quad \quad$&
-$\bmx{cccc} 1&2&1&3\\0&1&1/3&5/3\\0&0&0&-3\emx$
+\begin{center}\begin{tabular}{x{70pt} p{16pt} l}
+$3R_2+R_3\rightarrow R_3$
+&&
+$\bmx{JJJJ} 1&2&1&3\\0&1&\frac{1}{3}&\frac{5}{3}\\0&0&0&-3\emx$
 \end{tabular}\end{center}
 
-\begin{center}\begin{tabular}{ccl}
-\parbox{70pt}{\centering\small $-\frac13R_3\rightarrow R_3$}
-&$\quad \quad$&
-$\bmx{cccc} 1&2&1&3\\0&1&1/3&5/3\\0&0&0&1\emx$
+\begin{center}\begin{tabular}{x{70pt} p{16pt} l}
+$-\frac13R_3\rightarrow R_3$
+&&
+$\bmx{JJJJ} 1&2&1&3\\0&1&\frac{1}{3}&\frac{5}{3}\\0&0&0&1\emx$
 \end{tabular}\end{center}
 
-\begin{center}\begin{tabular}{ccl}
-\parbox{70pt}{\centering\small $-3R_3+R_1\rightarrow R_1$\\
+\begin{center}\begin{tabular}{x{70pt} p{16pt} l}
+$-3R_3+R_1\rightarrow R_1$\smallskip
 
-$-\frac53R_3+R_2\rightarrow R_2$}
-&$\quad \quad$&
-$\bmx{cccc} 1&2&1&0\\0&1&1/3&0\\0&0&0&1\emx$
+$-\frac53R_3+R_2\rightarrow R_2$
+&&
+$\bmx{JJJJ} 1&2&1&0\\0&1&\frac{1}{3}&0\\0&0&0&1\emx$
 \end{tabular}\end{center}
 
-\begin{center}\begin{tabular}{ccl}
-\parbox{70pt}{\centering\small $-2R_2+R_1\rightarrow R_1$}
-&$\quad \quad$&
-$\bmx{cccc} 1&0&1/3&0\\0&1&1/3&0\\0&0&0&1\emx$
+\begin{center}\begin{tabular}{x{70pt} p{16pt} l}
+$-2R_2+R_1\rightarrow R_1$
+&&
+$\bmx{JJJJ} 1&0&\frac{1}{3}&0\\0&1&\frac{1}{3}&0\\0&0&0&1\emx$
 \end{tabular}
 \end{center}
 }\\  %\eexset
-\clearpage
+%\clearpage
 
 The last matrix in the above example is in \rref. If one thinks of the original matrix as representing the augmented matrix of a system of linear equations, this final result is interesting. What does it mean to have a leading one in the last column? We'll figure this out in the next section.\\
 
-\example{ex_back_substitution}{Put the matrix \tta\ into \rref, where  $$\tta = \bmx{cccc}2&1&-1&4\\1&-1&2&12\\2&2&-1&9\\ \emx.$$}
+\example{ex_back_substitution}{Put the matrix \tta\ into \rref, where  $$\tta = \bmx{JJJK}2&1&-1&4\\1&-1&2&12\\2&2&-1&9\\ \emx.$$}
 {We'll again show the steps without explanation, although we will stop at the end of the forward steps and make a comment.
 
-\begin{center}\begin{tabular}{ccl}
-\parbox{70pt}{\centering\small $\frac12R_1\rightarrow R_1$}
-&$\quad \quad$&
-$\bmx{cccc}1&1/2&-1/2&2\\1&-1&2&12\\2&2&-1&9\\\emx$
+\begin{center}\begin{tabular}{x{70pt} p{16pt} l}
+$\frac12R_1\rightarrow R_1$
+&&
+$\bmx{JJJK}1&\frac{1}{2}&-\frac{1}{2}&2\\1&-1&2&12\\2&2&-1&9\\\emx$
 \end{tabular}\end{center}
 
-\begin{center}\begin{tabular}{ccl}
-\parbox{70pt}{\centering\small $-R_1+R_2\rightarrow R_2$\\
+\begin{center}\begin{tabular}{x{70pt} p{16pt} l}
+\small $-R_1+R_2\rightarrow R_2$\smallskip
 
-$-2R_1+R_3\rightarrow R_3$}
-&$\quad \quad$&
-$\bmx{cccc}1&1/2&-1/2&2\\0&-3/2&5/2&10\\0&1&0&5\\\emx$
+$-2R_1+R_3\rightarrow R_3$
+&&
+$\bmx{JJJK}1&\frac{1}{2}&-\frac{1}{2}&2\\0&-\frac{3}{2}&\frac{5}{2}&10\\0&1&0&5\\\emx$
 \end{tabular}\end{center}
 
-\begin{center}\begin{tabular}{ccl}
-\parbox{70pt}{\centering\small $-\frac23R_2\rightarrow R_2$\\}
-&$\quad \quad$&
-$\bmx{cccc}1&1/2&-1/2&2\\0&1&-5/3&-20/3\\0&1&0&5\\ \emx$
+\begin{center}\begin{tabular}{x{70pt} p{16pt} l}
+$-\frac23R_2\rightarrow R_2$
+&&
+$\bmx{JJJK}1&\frac{1}{2}&-\frac{1}{2}&2\\0&1&-\frac{5}{3}&-\frac{20}{3}\\0&1&0&5\\ \emx$
 \end{tabular}\end{center}
 
-\begin{center}\begin{tabular}{ccl}
-\parbox{70pt}{\centering\small $-R_2+R_3\rightarrow R_3$\\}
-&$\quad \quad$&
-$\bmx{cccc}1&1/2&-1/2&2\\0&1&-5/3&-20/3\\0&0&5/3&35/3\\ \emx$
+\begin{center}\begin{tabular}{x{70pt} p{16pt} l}
+$-R_2+R_3\rightarrow R_3$
+&&
+$\bmx{JJJK}1&\frac{1}{2}&-\frac{1}{2}&2\\0&1&-\frac{5}{3}&-\frac{20}{3}\\0&0&\frac{5}{3}&\frac{35}{3}\\ \emx$
 \end{tabular}\end{center}
 
-\begin{center}\begin{tabular}{ccl}
-\parbox{70pt}{\centering\small $\frac35R_3\rightarrow R_3$\\}
-&$\quad \quad$&
-$\bmx{cccc}1&1/2&-1/2&2\\0&1&-5/3&-20/3\\0&0&1&7\\ \emx$
+\begin{center}\begin{tabular}{x{70pt} p{16pt} l}
+$\frac35R_3\rightarrow R_3$
+&&
+$\bmx{JJJK}1&\frac{1}{2}&-\frac{1}{2}&2\\0&1&-\frac{5}{3}&-\frac{20}{3}\\0&0&1&7\\ \emx$
 \end{tabular}\end{center}
 
 %\drawexampleline{ex_back_substitution}
-
 Let's take a break here and think about the state of our linear system at this moment. Converting back to linear equations, we now know
 
-$$\begin{array}{rcl}
-x_1+1/2x_2-1/2x_3&=&2\\
-x_2-5/3x_3&=&-20/3\\
+$$\begin{array}{rcr}
+x_1+\frac{1}{2}x_2-\frac{1}{2}x_3&=&2\\
+x_2-\frac{5}{3}x_3&=&-\frac{20}{3}\\
 x_3&=&7\\
 \end{array}.$$
 
-Since we know that $x_3 = 7$, the second equation turns into $$x_2 - (5/3)(7) = -20/3,$$ telling us that $x_2 = 5$.
+Since $x_3 = 7$, the second equation becomes $$x_2 - \left(\frac{5}{3} \times 7\right) = -\frac{20}{3},$$ and we can determine that $x_2 = 5$.
 
-Finally, knowing values for $x_2$ and $x_3$ lets us substitute in the first equation and find $$x_1 +(1/2)(5)-(1/2)(7) = 2,$$ so $x_1 = 3$.\\
+Finally, knowing values for $x_2$ and $x_3$ lets us substitute in the first equation and find $$x_1 + \left(\frac{1}{2} \times 5 \right)-\left(\frac{1}{2} \times 7\right) = 2,$$ so $x_1 = 3$.\\
 
 This process of substituting known values back into other equations is called \textit{back substitution.} This process is essentially what happens when we perform the backward steps of Gaussian elimination. We make note of this below as we finish out finding the \rref\ of our matrix.
 
-\begin{center}\begin{tabular}{ccl}
-\parbox{100pt}{\centering\small $\frac53R_3+R_2\rightarrow R_2$\\
+\begin{center}\begin{tabular}{x{120pt} p{16pt} l}
+$\frac53R_3+R_2\rightarrow R_2$\smallskip
 
-(knowing $x_3=7$ allows us to find $x_2 = 5$)}
-&$\quad \quad$&
-$\bmx{cccc}1&1/2&-1/2&2\\0&1&0&5\\0&0&1&7\\ \emx$
+\small (knowing $x_3=7$ allows us to find $x_2 = 5$)
+&&
+$\bmx{JJJK}1&\frac{1}{2}&-\frac{1}{2}&2\\0&1&0&5\\0&0&1&7\\ \emx$
 \end{tabular}\end{center}
 
-\begin{center}\begin{tabular}{ccl}
-\parbox{120pt}{\centering\small $\frac12R_3+R_1\rightarrow R_1$\\
+\begin{center}\begin{tabular}{x{120pt} p{16pt} l}
+$\frac12R_3+R_1\rightarrow R_1$\smallskip
 
-$-\frac12R_2+R_1\rightarrow R_1$\\
+$-\frac12R_2+R_1\rightarrow R_1$\smallskip
 
-(knowing $x_2=5$ and $x_3=7$ allows us to find $x_1 = 3$)}
-&$\quad \quad$&
-$\bmx{cccc}1&0&0&3\\0&1&0&5\\0&0&1&7\\ \emx$
+\small (knowing $x_2=5$ and $x_3=7$ allows us to find $x_1 = 3$)
+&&
+$\bmx{JJJK}1&0&0&3\\0&1&0&5\\0&0&1&7\\ \emx$
 \end{tabular}\end{center}
 
-We did our operations slightly ``out of order'' in that we didn't put the zeros above our leading 1 in the third column in the same step, highlighting how back substitution works. }\\ %\eexset
+These operations are slightly ``out of order'' in that we didn't put the zeros above our leading 1 in the third column in the same step, highlighting how back substitution works. }\\ %\eexset
 
-In all of our practice, we've only encountered systems of linear equations with exactly one solution. Is this always going to be the case? Could we ever have systems with more than one solution? If so, how many solutions could there be? Could we have systems without a solution? These are some of the questions we'll address in the next section.\\
+In all of our practice, we've only encountered systems of linear equations with exactly one solution. Is this always going to be the case? That is, do some systems have more than one solution? If so, how many solutions can there be? What about systems with \emph{no} solution? These are some of the questions we'll address in the next section.\\
  
 
 %Exercises: Use G-J to find solutions to the following systems.\\
